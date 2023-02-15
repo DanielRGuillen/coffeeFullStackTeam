@@ -1,0 +1,178 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+  background: rgb(10, 52, 66);
+  background: linear-gradient(148deg, rgba(10, 52, 66, 1) 28%, rgba(3, 0, 28, 1) 99%);
+}
+
+header{
+  background-color: aquamarine;
+}
+/* .envios{
+  padding: 0.7rem;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 2.7px;
+  background-color: #B6EADA
+} */
+.navbar{
+  padding: 0;
+}
+.container-fluid{
+  background-color: #03001c;
+  position: absolute;
+  margin-top: 7rem;
+  /* margin-top: auto; */
+
+}
+nav img{
+  width: 100px ;
+  border-radius: 50%;
+  background-color: #aaa4de;
+}
+
+.navbar-nav li a{
+  color: white;
+  /* background-color: chartreuse; */
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 16px;
+  letter-spacing: 0.9px;
+  font-weight: 700;
+}
+form{
+  margin-right: 16rem;
+  /* background-color: red; */
+}
+form .btn{
+  border-radius: 20px;
+}
+/* estilo boton buscar */
+.btn:hover{
+  background-color: #7fffd6;
+  color: #03001c;
+}
+/* Posicionamiento de registrate y los iconos de carrito y usuario */
+.log-cart{
+  /* background-color: blueviolet; */
+  width: 200px;
+  position: absolute;
+  right: 0;
+  /* margin-bottom: 2rem; */
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+/* CONTENEDOR DEL PARRAFO Y NUESTRO PROYECTO */
+
+.container-sm{
+  /* background-color: red; */
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+.title__container{
+  /* background-color: #aaa4de; */
+  margin-left: 3rem;
+  margin-right: 10rem;
+  color: #7fffd6;
+
+}
+.title__text{
+  position: relative;
+  font-size: 3rem;
+
+  /* background-color: blue; */
+}
+
+
+.container__paragraph{
+  /* background-color: darkgreen; */
+  min-width: 300px;
+  background-color: #0a3442;
+  border-radius: 15px;
+  opacity: 0.5;
+  box-shadow: 1px 19px 14px -4px #3ad3cd;
+  color: white;
+  padding: 10px 10px;
+  overflow: hidden;
+}
+.container__paragraph:hover{
+  transition: all 500ms;
+  transform: scale(1.25);
+  border: 5px #B6EADA solid;
+  background-color:snow;
+  opacity: 1;
+  box-shadow: 1px 19px 14px -4px rgba(0,0,0,0.92);
+  color:#03001c;
+}
+.title__perfiles{
+  color: #7fffd6;
+  text-align: center;
+}
+.title__perfiles h4{
+  font-size: 3rem;
+}
+.card{
+  position: inherit;
+  background-color: #5b8fb9;
+  width: 300px;
+  border-radius: 15px ;
+  margin: auto auto;
+  margin-top: 2rem;
+  opacity: 0.5;
+  box-shadow: -10px 19px 14px -4px rgba(0,0,0,0.92);
+
+
+}
+.card:hover{
+  transition: all 400ms;
+  opacity: 1;
+}
+/* .perfiles{
+  background-color: rgb(128, 243, 251);
+  position: absolute;
+} */
+/* Ajuste tamaño fotos */
+.perfiles img{
+  width: 15rem;
+  border-radius: 15px;
+  margin: auto auto;
+  filter: grayscale(100%);
+}
+.perfiles img:hover{
+  transition: all 400ms;
+  border-radius: 50%;
+  filter: grayscale(0) ;
+  /* brightness(1.2) contrast(1.2) */
+  border: solid 4px white;
+
+}
+
+
+
+
+
+/* Responsive para que no se desborde el parrafo de descripcion proyecto */
+@media screen and (max-width: 900px){
+  .title__text{
+    transition: all 200ms;
+    font-size: 2rem;
+    margin-right: -7rem;
+    margin-left: -3rem;
+    text-align: center;
+  }
+  .container__paragraph{
+    margin-bottom: 5rem;
+  }
+}
