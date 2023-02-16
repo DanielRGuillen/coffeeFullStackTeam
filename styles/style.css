@@ -168,8 +168,8 @@ footer{
 
 
 .footer_menu{
-  margin: 0;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   width: 50%; 
   display: flex;
   align-items: center;
@@ -203,14 +203,15 @@ footer{
 
 .footer_socialNetworks{
   width: 40%;
-  margin: 0%;
-  padding: 15px;
-  align-items: center;
+  margin: 5px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer_socialNetworks p{
   padding-left: 25px;
-  margin: 0;
+  margin: 2px;
   font-size: 20px;
   color: snow;
   font-weight: bold;
@@ -226,7 +227,7 @@ footer{
 }
 
 .footer_socialNetworks i:hover {
-  font-size: 35px;
+  font-size: 32px;
   bottom: 0;
   left: 0;
   background-color: #4372a830;
