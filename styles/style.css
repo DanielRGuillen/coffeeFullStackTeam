@@ -19,7 +19,11 @@ body {
   margin: 0;
   box-sizing: border-box;
   background: rgb(10, 52, 66);
-  background: linear-gradient(148deg, rgba(10, 52, 66, 1) 28%, rgba(3, 0, 28, 1) 99%);
+  background: linear-gradient(
+    148deg,
+    rgba(10, 52, 66, 1) 28%,
+    rgba(3, 0, 28, 1) 99%
+  );
 }
 
 header {
@@ -35,7 +39,6 @@ header {
   position: absolute;
   margin-top: 7rem;
   /* margin-top: auto; */
-
 }
 
 nav img {
@@ -166,7 +169,7 @@ transform: scale(1.01);
   color: var(--cyan);
 
 }
-.title__text{
+.title__text {
   position: relative;
   font-size: 3rem;
   
@@ -185,7 +188,7 @@ transform: scale(1.01);
   font-size: 1.4rem;
   text-align: justify;
 }
-.container__paragraph:hover{
+.container__paragraph:hover {
   transition: all 500ms;
   transform: scale(1.25);
   border: 5px #B6EADA solid;
@@ -233,16 +236,102 @@ transform: scale(1.01);
   margin: auto auto;
   filter: grayscale(100%);
 }
-
+.photoKaren{
+  height: 240px;
+  object-fit: cover;
+}
 .perfiles img:hover {
+
   transition: all 400ms;
   border-radius: 50%;
   filter: grayscale(0);
   /* brightness(1.2) contrast(1.2) */
   border: solid 4px white;
+}
+
+footer{
+  border: 0;
+  padding:5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color:#03001c;
+}
+
+
+.footer_menu{
+  margin: 5px;
+  padding: 5px;
+  width: 50%; 
+  display: flex;
+  align-items: center;
 
 }
 
+.footer_menu ul{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+
+}
+
+.footer_menu a{
+  color: snow;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer_menu li:hover {
+  padding: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #4372a830;
+  transition: width 0.3s ease-out;
+}
+
+
+
+.footer_socialNetworks{
+  width: 40%;
+  margin: 5px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_socialNetworks p{
+  padding-left: 25px;
+  margin: 2px;
+  font-size: 20px;
+  color: snow;
+  font-weight: bold;
+}
+
+
+.footer_socialNetworks i{
+  margin: 2px;
+  padding: 5px;
+  font-size: 30px;
+  color: snow;
+  
+}
+
+.footer_socialNetworks i:hover {
+  font-size: 32px;
+  bottom: 0;
+  left: 0;
+  background-color: #4372a830;
+  transition: width 0.3s ease-out;
+}
+ 
+
+.footer_pay{
+  border: solid red;
+  width: 20%;
+  text-align: center;
+}
 
 
 
@@ -261,6 +350,17 @@ transform: scale(1.01);
     margin-bottom: 5rem;
   }
 }
+
+
+/*todo responsive para navbar en table mobile */
+
+/* @media screen and (max-width: 990px){
+    .container-fluid{
+      margin: 0;
+      position: static;
+    }
+
+} */
 
 @media screen and (max-width:750px) {
   .ourProyect {
