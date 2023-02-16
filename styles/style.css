@@ -1,39 +1,54 @@
-:root{
+:root {
   --negro: #000000;
   --deepblue: #0A3442;
-  --blue:#25BEE8;
-  --cyan:#36C4C6;
+  --blue: #25BEE8;
+  --cyan: #36C4C6;
   --blanco: #EFEFEF;
 }
 
-body{
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
   margin: 0;
   box-sizing: border-box;
   background: rgb(10, 52, 66);
   background: linear-gradient(148deg, rgba(10, 52, 66, 1) 28%, rgba(3, 0, 28, 1) 99%);
 }
 
-header{
+header {
   background-color: aquamarine;
 }
 
-.navbar{
+.navbar {
   padding: 0;
 }
-.container-fluid{
-  background-color:var(--negro);
+
+.container-fluid {
+  background-color: var(--negro);
   position: absolute;
   margin-top: 7rem;
   /* margin-top: auto; */
 
 }
-nav img{
-  width: 100px ;
+
+nav img {
+  width: 100px;
   border-radius: 50%;
   background-color: var(--blue);
 }
 
-.navbar-nav li a{
+/* .active{
+  background-color: var(--blue)
+} */
+
+.navbar-nav li a {
   color: white;
   /* background-color: chartreuse; */
   display: inline-block;
@@ -45,20 +60,26 @@ nav img{
   letter-spacing: 0.9px;
   font-weight: 700;
 }
-form{
+
+form {
   margin-right: 16rem;
   /* background-color: red; */
 }
-form .btn{
+
+form .btn {
   border-radius: 20px;
+  border: var(--blue) 1px solid;
+  color: var(--blue);
 }
+
 /* estilo boton buscar */
-.btn:hover{
+.btn:hover {
   background-color: #7fffd6;
   color: #03001c;
 }
+
 /* Posicionamiento de registrate y los iconos de carrito y usuario */
-.log-cart{
+.log-cart {
   /* background-color: blueviolet; */
   width: 200px;
   position: absolute;
@@ -70,7 +91,7 @@ form .btn{
 }
 
 /* PARTE DE ENVIOS */
-.envios{
+.envios {
   color: #000000;
 
   width: 100%;
@@ -78,9 +99,10 @@ form .btn{
   letter-spacing: 2.7px;
   background-color: #B6EADA;
   margin-top: 7rem;
-  
+
 }
-.envios p{
+
+.envios p {
   font-size: 15px;
   padding: 1px;
   display: flex;
@@ -91,9 +113,40 @@ form .btn{
 }
 
 /* CONTENEDOR DEL PARRAFO Y NUESTRO PROYECTO */
+.ourProyect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin: 2rem auto 6rem;
+  padding: 2rem 10rem;
+}
 
+.container_proyect {
+  background-color: var(--blue);
+  padding: 1.2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 10px 22px -9px rgba(54,196,198,0.18);
+}
+
+.ourProyect h4 {
+  color: var(--cyan);
+  font-size: 3rem;
+  margin: 5px auto 2rem;
+}
+
+.ourProyect p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-align: justify;
+  padding: 5px;
+  color: var(--negro);
+}
+
+/* 
 .container-sm{
-  /* background-color: red; */
+
   margin-top: 10rem;
   margin-left: auto;
   margin-right: auto;
@@ -103,7 +156,7 @@ form .btn{
   align-items: center;
 }
 .title__container{
-  /* background-color: #aaa4de; */
+  
   margin-left: 3rem;
   margin-right: 10rem;
   color: var(--cyan);
@@ -112,18 +165,16 @@ form .btn{
 .title__text{
   position: relative;
   font-size: 3rem;
-
-  /* background-color: blue; */
+  
 }
 
-
 .container__paragraph{
-  /* background-color: darkgreen; */
+  
   min-width: 300px;
-  /* background-color: #0a3442; */
+  
   border-radius: 15px;
   opacity: 0.5;
-  box-shadow: 1px 19px 14px -4px #3ad3cd;
+  box-shadow: 1px 10px 8px -4px var(--blanco);
   color: white;
   padding: 10px 10px;
   overflow: hidden;
@@ -138,46 +189,51 @@ form .btn{
   opacity: 1;
   box-shadow: 1px 19px 14px -4px rgba(0,0,0,0.92);
   color:#03001c;
-}
-.title__perfiles{
+} */
+/* perfiles */
+.title__perfiles {
   color: var(--cyan);
   text-align: center;
 }
 
-.title__perfiles h4{
+.title__perfiles h4 {
   font-size: 3rem;
 }
-.card{
+
+.card {
   position: inherit;
   background-color: var(--cyan);
   width: 300px;
-  border-radius: 15px ;
+  border-radius: 15px;
   margin: auto auto;
   margin-top: 2rem;
   opacity: 0.5;
-  box-shadow: -10px 19px 14px -4px rgba(0,0,0,0.92);
+  box-shadow: -10px 19px 14px -4px rgba(0, 0, 0, 0.92);
 
 
 }
-.card:hover{
+
+.card:hover {
   transition: all 400ms;
   opacity: 1;
 }
+
 /* .perfiles{
   background-color: rgb(128, 243, 251);
   position: absolute;
 } */
 /* Ajuste tamaño fotos */
-.perfiles img{
+.perfiles img {
   width: 15rem;
   border-radius: 15px;
   margin: auto auto;
   filter: grayscale(100%);
 }
-.perfiles img:hover{
+
+.perfiles img:hover {
   transition: all 400ms;
   border-radius: 50%;
-  filter: grayscale(0) ;
+  filter: grayscale(0);
   /* brightness(1.2) contrast(1.2) */
   border: solid 4px white;
 
@@ -188,15 +244,26 @@ form .btn{
 
 
 /* Responsive para que no se desborde el parrafo de descripcion proyecto */
-@media screen and (max-width: 900px){
-  .title__text{
+@media screen and (max-width: 900px) {
+  .title__text {
     transition: all 200ms;
     font-size: 2rem;
     margin-right: -7rem;
     margin-left: -3rem;
     text-align: center;
   }
-  .container__paragraph{
+
+  .container__paragraph {
     margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .ourProyect {
+    padding: 2rem;
+  }
+
+  .container__paragraph p {
+    padding: 1rem;
   }
 }
