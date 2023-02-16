@@ -30,15 +30,15 @@ header {
 .container-fluid {
   background-color: var(--negro);
   position: absolute;
-  margin-top: 7rem;
+  margin-top: 5rem;
   display: flex;
   justify-content: space-around;
   /* margin-top: auto; */
 }
 
 nav img {
-  margin-top: 50px;
-  width: 80px;
+  margin-top: 40px;
+  width: 60px;
   object-fit: contain;
   border-radius: 20%;
   background-color: var(--blanco);
@@ -98,7 +98,7 @@ form .btn {
   font-weight: 600;
   letter-spacing: 2.7px;
   background-color: #B6EADA;
-  margin-top: 7rem;
+  margin-top: 7.5rem;
 
 }
 
@@ -244,6 +244,103 @@ transform: scale(1.01);
   filter: grayscale(0);
   /* brightness(1.2) contrast(1.2) */
   border: solid 4px white;
+}
+
+footer{
+  display: grid;
+  grid-template-columns:  repeat(10, 1fr);
+  border: 0;
+  width: 100vw;
+  align-items: center;
+  background-color:var(--negro);
+}
+
+
+.footer_menu{
+  grid-column: 1/5;
+  width: 100%; 
+
+}
+
+.footer_menu ul{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+
+}
+
+.footer_menu a{
+  color: rgb(210, 203, 203);
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer_menu li:hover {
+  bottom: 0;
+  left: 0;
+  background-color: #4372a81d;
+  font-weight: bold;
+  transition: width 0.3s ease-out;
+}
+
+
+
+.footer_socialNetworks{
+  grid-column: 5/7;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_socialNetworks p{
+  padding-top: 15px;
+  margin: 0;
+  font-size: 20px;
+  color: rgb(210, 203, 203);
+  font-weight: bold;
+}
+
+
+.footer_socialNetworks i{
+  margin: 0;
+  padding: 15px 5px;
+  font-size: 30px;
+  color: rgb(210, 203, 203);
+  
+}
+
+.footer_socialNetworks i:hover {
+  font-size: 31px;
+  bottom: 0;
+  left: 0;
+  color: var(--cyan);
+  transition: width 0.3s ease-out;
+}
+ 
+
+.footer_pay{
+  grid-column: 9/11;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_pay p{
+  margin: 0;
+  padding: 10px ;
+  font-size: 15px;
+  color: rgb(210, 203, 203);
+}
+
+.footer_pay i{
+  margin: 0;
+  padding: 5px;
+  font-size: 20px;
+  color: rgb(210, 203, 203);
 }
 
 
