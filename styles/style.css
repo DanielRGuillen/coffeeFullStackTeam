@@ -1,11 +1,15 @@
-body{
+body {
   margin: 0;
   box-sizing: border-box;
   background: rgb(10, 52, 66);
-  background: linear-gradient(148deg, rgba(10, 52, 66, 1) 28%, rgba(3, 0, 28, 1) 99%);
+  background: linear-gradient(
+    148deg,
+    rgba(10, 52, 66, 1) 28%,
+    rgba(3, 0, 28, 1) 99%
+  );
 }
 
-header{
+header {
   background-color: aquamarine;
 }
 /* .envios{
@@ -17,23 +21,22 @@ header{
   letter-spacing: 2.7px;
   background-color: #B6EADA
 } */
-.navbar{
+.navbar {
   padding: 0;
 }
-.container-fluid{
+.container-fluid {
   background-color: #03001c;
   position: absolute;
   margin-top: 7rem;
   /* margin-top: auto; */
-
 }
-nav img{
-  width: 100px ;
+nav img {
+  width: 100px;
   border-radius: 50%;
   background-color: #aaa4de;
 }
 
-.navbar-nav li a{
+.navbar-nav li a {
   color: white;
   /* background-color: chartreuse; */
   display: inline-block;
@@ -45,20 +48,20 @@ nav img{
   letter-spacing: 0.9px;
   font-weight: 700;
 }
-form{
+form {
   margin-right: 16rem;
   /* background-color: red; */
 }
-form .btn{
+form .btn {
   border-radius: 20px;
 }
 /* estilo boton buscar */
-.btn:hover{
+.btn:hover {
   background-color: #7fffd6;
   color: #03001c;
 }
 /* Posicionamiento de registrate y los iconos de carrito y usuario */
-.log-cart{
+.log-cart {
   /* background-color: blueviolet; */
   width: 200px;
   position: absolute;
@@ -71,7 +74,7 @@ form .btn{
 
 /* CONTENEDOR DEL PARRAFO Y NUESTRO PROYECTO */
 
-.container-sm{
+.container-sm {
   /* background-color: red; */
   margin-top: 10rem;
   margin-left: auto;
@@ -81,22 +84,20 @@ form .btn{
   display: flex;
   align-items: center;
 }
-.title__container{
+.title__container {
   /* background-color: #aaa4de; */
   margin-left: 3rem;
   margin-right: 10rem;
   color: #7fffd6;
-
 }
-.title__text{
+.title__text {
   position: relative;
   font-size: 3rem;
 
   /* background-color: blue; */
 }
 
-
-.container__paragraph{
+.container__paragraph {
   /* background-color: darkgreen; */
   min-width: 300px;
   background-color: #0a3442;
@@ -107,35 +108,33 @@ form .btn{
   padding: 10px 10px;
   overflow: hidden;
 }
-.container__paragraph:hover{
+.container__paragraph:hover {
   transition: all 500ms;
   transform: scale(1.25);
-  border: 5px #B6EADA solid;
-  background-color:snow;
+  border: 5px #b6eada solid;
+  background-color: snow;
   opacity: 1;
-  box-shadow: 1px 19px 14px -4px rgba(0,0,0,0.92);
-  color:#03001c;
+  box-shadow: 1px 19px 14px -4px rgba(0, 0, 0, 0.92);
+  color: #03001c;
 }
-.title__perfiles{
+.title__perfiles {
   color: #7fffd6;
   text-align: center;
 }
-.title__perfiles h4{
+.title__perfiles h4 {
   font-size: 3rem;
 }
-.card{
+.card {
   position: inherit;
   background-color: #5b8fb9;
   width: 300px;
-  border-radius: 15px ;
+  border-radius: 15px;
   margin: auto auto;
   margin-top: 2rem;
   opacity: 0.5;
-  box-shadow: -10px 19px 14px -4px rgba(0,0,0,0.92);
-
-
+  box-shadow: -10px 19px 14px -4px rgba(0, 0, 0, 0.92);
 }
-.card:hover{
+.card:hover {
   transition: all 400ms;
   opacity: 1;
 }
@@ -144,7 +143,7 @@ form .btn{
   position: absolute;
 } */
 /* Ajuste tamaño fotos */
-.perfiles img{
+.perfiles img {
   width: 15rem;
   border-radius: 15px;
   margin: auto auto;
@@ -157,29 +156,112 @@ form .btn{
 .perfiles img:hover{
   transition: all 400ms;
   border-radius: 50%;
-  filter: grayscale(0) ;
+  filter: grayscale(0);
   /* brightness(1.2) contrast(1.2) */
   border: solid 4px white;
+}
 
+footer{
+  border: 0;
+  padding:5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color:#03001c;
+}
+
+
+.footer_menu{
+  margin: 5px;
+  padding: 5px;
+  width: 50%; 
+  display: flex;
+  align-items: center;
+
+}
+
+.footer_menu ul{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+
+}
+
+.footer_menu a{
+  color: snow;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer_menu li:hover {
+  padding: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #4372a830;
+  transition: width 0.3s ease-out;
+}
+
+
+
+.footer_socialNetworks{
+  width: 40%;
+  margin: 5px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_socialNetworks p{
+  padding-left: 25px;
+  margin: 2px;
+  font-size: 20px;
+  color: snow;
+  font-weight: bold;
+}
+
+
+.footer_socialNetworks i{
+  margin: 2px;
+  padding: 5px;
+  font-size: 30px;
+  color: snow;
+  
+}
+
+.footer_socialNetworks i:hover {
+  font-size: 32px;
+  bottom: 0;
+  left: 0;
+  background-color: #4372a830;
+  transition: width 0.3s ease-out;
+}
+ 
+
+.footer_pay{
+  border: solid red;
+  width: 20%;
+  text-align: center;
 }
 
 
 
 
-
 /* Responsive para que no se desborde el parrafo de descripcion proyecto */
-@media screen and (max-width: 900px){
-  .title__text{
+@media screen and (max-width: 900px) {
+  .title__text {
     transition: all 200ms;
     font-size: 2rem;
     margin-right: -7rem;
     margin-left: -3rem;
     text-align: center;
   }
-  .container__paragraph{
+  .container__paragraph {
     margin-bottom: 5rem;
   }
 }
+
 
 /*todo responsive para navbar en table mobile */
 
