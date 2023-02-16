@@ -240,12 +240,8 @@ transform: scale(1.01);
   height: 240px;
   object-fit: cover;
 }
-<<<<<<< HEAD
-.perfiles img:hover{
-=======
 .perfiles img:hover {
 
->>>>>>> main
   transition: all 400ms;
   border-radius: 50%;
   filter: grayscale(0);
@@ -364,9 +360,6 @@ footer{
       position: static;
     }
 
-<<<<<<< HEAD
-} */
-=======
 } */
 
 @media screen and (max-width:750px) {
@@ -378,4 +371,3 @@ footer{
     padding: 1rem;
   }
 }
->>>>>>> main
