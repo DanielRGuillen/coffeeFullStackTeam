@@ -149,7 +149,12 @@ form .btn {
   margin: auto auto;
   filter: grayscale(100%);
 }
+.photoKaren{
+  height: 240px;
+  object-fit: cover;
+}
 .perfiles img:hover {
+
   transition: all 400ms;
   border-radius: 50%;
   filter: grayscale(0);
@@ -257,3 +262,14 @@ footer{
     margin-bottom: 5rem;
   }
 }
+
+
+/*todo responsive para navbar en table mobile */
+
+/* @media screen and (max-width: 990px){
+    .container-fluid{
+      margin: 0;
+      position: static;
+    }
+
+} */
