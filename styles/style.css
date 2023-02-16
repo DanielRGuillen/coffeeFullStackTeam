@@ -122,12 +122,15 @@ form .btn {
   margin: 2rem auto 6rem;
   padding: 2rem 10rem;
 }
-
-.container_proyect {
+ .container {
   background-color: var(--blue);
   padding: 1.2rem;
   border-radius: 5px;
-  -webkit-box-shadow: 1px 10px 22px -9px rgba(54,196,198,0.18);
+  -webkit-box-shadow: 1px 4px 26px -10px rgba(255,255,255,0.5);
+  
+}
+.container :hover{
+transform: scale(1.01);
 }
 
 .ourProyect h4 {
@@ -136,11 +139,11 @@ form .btn {
   margin: 5px auto 2rem;
 }
 
-.ourProyect p {
+.container p {
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-align: justify;
-  padding: 5px;
+  padding: 7px;
   color: var(--negro);
 }
 
