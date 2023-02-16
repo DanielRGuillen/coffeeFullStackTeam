@@ -1,3 +1,11 @@
+:root{
+  --negro: #000000;
+  --deepblue: #0A3442;
+  --blue:#25BEE8;
+  --cyan:#36C4C6;
+  --blanco: #EFEFEF;
+}
+
 body{
   margin: 0;
   box-sizing: border-box;
@@ -8,20 +16,12 @@ body{
 header{
   background-color: aquamarine;
 }
-/* .envios{
-  padding: 0.7rem;
-  color: #000000;
-  text-align: center;
-  width: 100%;
-  font-weight: 600;
-  letter-spacing: 2.7px;
-  background-color: #B6EADA
-} */
+
 .navbar{
   padding: 0;
 }
 .container-fluid{
-  background-color: #03001c;
+  background-color:var(--negro);
   position: absolute;
   margin-top: 7rem;
   /* margin-top: auto; */
@@ -30,7 +30,7 @@ header{
 nav img{
   width: 100px ;
   border-radius: 50%;
-  background-color: #aaa4de;
+  background-color: var(--blue);
 }
 
 .navbar-nav li a{
@@ -69,6 +69,27 @@ form .btn{
   justify-content: center;
 }
 
+/* PARTE DE ENVIOS */
+.envios{
+  color: #000000;
+
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 2.7px;
+  background-color: #B6EADA;
+  margin-top: 7rem;
+  
+}
+.envios p{
+  font-size: 15px;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
 /* CONTENEDOR DEL PARRAFO Y NUESTRO PROYECTO */
 
 .container-sm{
@@ -76,8 +97,8 @@ form .btn{
   margin-top: 10rem;
   margin-left: auto;
   margin-right: auto;
-  width: 80vw;
-  height: 40vh;
+  width: 70vw;
+  height: 70vh;
   display: flex;
   align-items: center;
 }
@@ -85,7 +106,7 @@ form .btn{
   /* background-color: #aaa4de; */
   margin-left: 3rem;
   margin-right: 10rem;
-  color: #7fffd6;
+  color: var(--cyan);
 
 }
 .title__text{
@@ -99,33 +120,36 @@ form .btn{
 .container__paragraph{
   /* background-color: darkgreen; */
   min-width: 300px;
-  background-color: #0a3442;
+  /* background-color: #0a3442; */
   border-radius: 15px;
   opacity: 0.5;
   box-shadow: 1px 19px 14px -4px #3ad3cd;
   color: white;
   padding: 10px 10px;
   overflow: hidden;
+  font-size: 1.4rem;
+  text-align: justify;
 }
 .container__paragraph:hover{
   transition: all 500ms;
   transform: scale(1.25);
   border: 5px #B6EADA solid;
-  background-color:snow;
+  background-color: var(--cyan);
   opacity: 1;
   box-shadow: 1px 19px 14px -4px rgba(0,0,0,0.92);
   color:#03001c;
 }
 .title__perfiles{
-  color: #7fffd6;
+  color: var(--cyan);
   text-align: center;
 }
+
 .title__perfiles h4{
   font-size: 3rem;
 }
 .card{
   position: inherit;
-  background-color: #5b8fb9;
+  background-color: var(--cyan);
   width: 300px;
   border-radius: 15px ;
   margin: auto auto;
