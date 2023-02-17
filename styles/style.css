@@ -229,7 +229,8 @@ form .btn {
   margin: auto auto;
   filter: grayscale(100%);
 }
-.photoKaren {
+.photoKaren,
+.photoLaura {
   height: 240px;
   object-fit: cover;
 }
