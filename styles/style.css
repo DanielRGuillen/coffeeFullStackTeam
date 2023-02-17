@@ -118,8 +118,8 @@ form .btn {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  margin: 5px;
-  padding: 20px 20px;
+  margin: 2rem auto 6rem;
+  padding: 2rem 7rem;
 }
 .container {
   background-color: var(--blue);
