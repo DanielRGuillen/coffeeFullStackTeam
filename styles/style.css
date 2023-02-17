@@ -1,18 +1,9 @@
 :root {
   --negro: #000000;
-  --deepblue: #0A3442;
-  --blue: #25BEE8;
-  --cyan: #36C4C6;
-  --blanco: #EFEFEF;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  font-family: 'Libre Franklin', sans-serif;
+  --deepblue: #0a3442;
+  --blue: #25bee8;
+  --cyan: #36c4c6;
+  --blanco: #efefef;
 }
 
 body {
@@ -24,6 +15,8 @@ body {
     rgba(10, 52, 66, 1) 28%,
     rgba(3, 0, 28, 1) 99%
   );
+  font-family: "Libre Franklin", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -37,14 +30,18 @@ header {
 .container-fluid {
   background-color: var(--negro);
   position: absolute;
-  margin-top: 7rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
   /* margin-top: auto; */
 }
 
 nav img {
-  width: 100px;
-  border-radius: 50%;
-  background-color: var(--blue);
+  margin-top: 40px;
+  width: 60px;
+  object-fit: contain;
+  border-radius: 20%;
+  background-color: var(--blanco);
 }
 
 /* .active{
@@ -59,9 +56,9 @@ nav img {
   text-decoration: none;
   text-transform: capitalize;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 0.9px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 form {
@@ -100,9 +97,8 @@ form .btn {
   width: 100%;
   font-weight: 600;
   letter-spacing: 2.7px;
-  background-color: #B6EADA;
-  margin-top: 7rem;
-
+  background-color: #b6eada;
+  margin-top: 7.5rem;
 }
 
 .envios p {
@@ -125,16 +121,15 @@ form .btn {
   margin: 2rem auto 6rem;
   padding: 2rem 7rem;
 }
- .container {
+.container {
   background-color: var(--blue);
-  padding: 1.2rem;
+  padding: 1rem;
   border-radius: 5px;
-  box-shadow:1px 4px 26px -10px rgba(255,255,255,0.5);
-  -webkit-box-shadow: 1px 4px 26px -10px rgba(255,255,255,0.5);
-  
+  box-shadow: 1px 4px 26px -10px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 1px 4px 26px -10px rgba(255, 255, 255, 0.5);
 }
-.container :hover{
-transform: scale(1.01);
+.container :hover {
+  transform: scale(1.01);
 }
 
 .ourProyect h4 {
@@ -216,8 +211,6 @@ transform: scale(1.01);
   margin-top: 2rem;
   opacity: 0.5;
   box-shadow: -10px 19px 14px -4px rgba(0, 0, 0, 0.92);
-
-
 }
 
 .card:hover {
@@ -236,12 +229,11 @@ transform: scale(1.01);
   margin: auto auto;
   filter: grayscale(100%);
 }
-.photoKaren{
+.photoKaren {
   height: 240px;
   object-fit: cover;
 }
 .perfiles img:hover {
-
   transition: all 400ms;
   border-radius: 50%;
   filter: grayscale(0);
@@ -249,95 +241,97 @@ transform: scale(1.01);
   border: solid 4px white;
 }
 
-footer{
+footer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
   border: 0;
-  padding:5px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background-color:#03001c;
-}
-
-
-.footer_menu{
-  margin: 5px;
-  padding: 5px;
-  width: 50%; 
-  display: flex;
+  width: 100vw;
   align-items: center;
-
+  background-color: var(--negro);
 }
 
-.footer_menu ul{
+.footer_menu {
+  grid-column: 1/5;
+  width: 100%;
+}
+
+.footer_menu ul {
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
-
+  gap: 10px;
 }
 
-.footer_menu a{
-  color: snow;
+.footer_menu a {
+  color: rgb(210, 203, 203);
+  font-weight: bold;
   font-size: 15px;
   text-decoration: none;
 }
 
 .footer_menu li:hover {
-  padding: 3px;
   bottom: 0;
   left: 0;
-  background-color: #4372a830;
+  background-color: #4372a81d;
+  font-weight: bold;
   transition: width 0.3s ease-out;
 }
 
-
-
-.footer_socialNetworks{
-  width: 40%;
-  margin: 5px;
-  padding: 30px;
+.footer_socialNetworks {
+  grid-column: 5/7;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.footer_socialNetworks p{
-  padding-left: 25px;
-  margin: 2px;
+.footer_socialNetworks p {
+  padding-top: 15px;
+  margin: 0;
   font-size: 20px;
-  color: snow;
+  color: rgb(210, 203, 203);
   font-weight: bold;
 }
 
-
-.footer_socialNetworks i{
-  margin: 2px;
-  padding: 5px;
+.footer_socialNetworks i {
+  margin: 0;
+  padding: 15px 5px;
   font-size: 30px;
-  color: snow;
-  
+  color: rgb(210, 203, 203);
 }
 
 .footer_socialNetworks i:hover {
-  font-size: 32px;
+  font-size: 31px;
   bottom: 0;
   left: 0;
-  background-color: #4372a830;
+  color: var(--cyan);
   transition: width 0.3s ease-out;
 }
- 
 
-.footer_pay{
-  border: solid red;
-  width: 20%;
-  text-align: center;
+.footer_pay {
+  grid-column: 8/10;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.footer_pay p {
+  margin: 0;
+  padding: 10px;
+  font-size: 15px;
+  color: rgb(210, 203, 203);
+}
 
-
+.footer_pay i {
+  margin: 0;
+  padding: 5px;
+  font-size: 23.5px;
+  color: rgb(210, 203, 203);
+}
 
 /* Responsive para que no se desborde el parrafo de descripcion proyecto */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
   .title__text {
     transition: all 200ms;
     font-size: 2rem;
@@ -349,8 +343,51 @@ footer{
   .container__paragraph {
     margin-bottom: 5rem;
   }
-}
 
+  .footer_menu a {
+    font-weight: bold;
+    font-size: 12px;
+
+  }
+
+  .footer_socialNetworks {
+    grid-column: 5/6;
+  }
+
+  .footer_socialNetworks p {
+    font-size: 15px;
+  }
+
+  .footer_socialNetworks i {
+    padding: 10px 2px;
+    font-size: 22px;
+  }
+
+  .footer_socialNetworks i:hover {
+    font-size: 23px;
+  }
+
+
+  .footer_pay {
+    grid-column: 7/10;
+  }
+
+  .footer_pay p {
+    margin: 0;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(210, 203, 203);
+  }
+
+  .footer_pay i {
+    margin: 0;
+    padding: 5px;
+    font-size: 17px;
+    color: rgb(210, 203, 203);
+  }
+
+}
 
 /*todo responsive para navbar en table mobile */
 
@@ -362,12 +399,39 @@ footer{
 
 } */
 
-@media screen and (max-width:750px) {
+@media screen and (max-width: 768px) {
   .ourProyect {
     padding: 2rem;
   }
 
   .container__paragraph p {
     padding: 1rem;
+  }
+
+  .footer_menu ul {
+    
+    display: none;}
+
+  
+  .footer_socialNetworks {
+    grid-column: 1/6;
+  }
+
+  .footer_socialNetworks i {
+    padding: 10px 2px;
+    font-size: 25px;
+  }
+
+  .footer_socialNetworks i:hover {
+    font-size: 26px;
+  }
+
+  .footer_pay {
+    grid-column: 6/10;
+  }
+
+  .footer_pay i {
+    font-size: 24px;
+
   }
 }
