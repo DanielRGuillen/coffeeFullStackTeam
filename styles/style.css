@@ -1,11 +1,10 @@
 :root {
   --negro: #000000;
-  --deepblue: #0A3442;
-  --blue: #25BEE8;
-  --cyan: #36C4C6;
-  --blanco: #EFEFEF;
+  --deepblue: #0a3442;
+  --blue: #25bee8;
+  --cyan: #36c4c6;
+  --blanco: #efefef;
 }
-
 
 body {
   margin: 0;
@@ -16,7 +15,7 @@ body {
     rgba(10, 52, 66, 1) 28%,
     rgba(3, 0, 28, 1) 99%
   );
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 header {
@@ -97,9 +96,8 @@ form .btn {
   width: 100%;
   font-weight: 600;
   letter-spacing: 2.7px;
-  background-color: #B6EADA;
+  background-color: #b6eada;
   margin-top: 7.5rem;
-
 }
 
 .envios p {
@@ -122,16 +120,15 @@ form .btn {
   margin: 5px;
   padding: 20px 20px;
 }
- .container {
+.container {
   background-color: var(--blue);
-  padding: 1.2rem;
+  padding: 1rem;
   border-radius: 5px;
-  box-shadow:1px 4px 26px -10px rgba(255,255,255,0.5);
-  -webkit-box-shadow: 1px 4px 26px -10px rgba(255,255,255,0.5);
-  
+  box-shadow: 1px 4px 26px -10px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 1px 4px 26px -10px rgba(255, 255, 255, 0.5);
 }
-.container :hover{
-transform: scale(1.01);
+.container :hover {
+  transform: scale(1.01);
 }
 
 .ourProyect h4 {
@@ -213,8 +210,6 @@ transform: scale(1.01);
   margin-top: 2rem;
   opacity: 0.5;
   box-shadow: -10px 19px 14px -4px rgba(0, 0, 0, 0.92);
-
-
 }
 
 .card:hover {
@@ -233,12 +228,11 @@ transform: scale(1.01);
   margin: auto auto;
   filter: grayscale(100%);
 }
-.photoKaren{
+.photoKaren {
   height: 240px;
   object-fit: cover;
 }
 .perfiles img:hover {
-
   transition: all 400ms;
   border-radius: 50%;
   filter: grayscale(0);
@@ -246,34 +240,31 @@ transform: scale(1.01);
   border: solid 4px white;
 }
 
-footer{
+footer {
   display: grid;
-  grid-template-columns:  repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   border: 0;
   width: 100vw;
   align-items: center;
-  background-color:var(--negro);
+  background-color: var(--negro);
 }
 
-
-.footer_menu{
+.footer_menu {
   grid-column: 1/5;
-  width: 100%; 
-
+  width: 100%;
 }
 
-.footer_menu ul{
+.footer_menu ul {
   margin: 0;
   list-style: none;
   display: flex;
   gap: 10px;
-
 }
 
-.footer_menu a{
+.footer_menu a {
   color: rgb(210, 203, 203);
   font-weight: bold;
-  font-size: 13px;
+  font-size: 15px;
   text-decoration: none;
 }
 
@@ -285,17 +276,15 @@ footer{
   transition: width 0.3s ease-out;
 }
 
-
-
-.footer_socialNetworks{
+.footer_socialNetworks {
   grid-column: 5/7;
-  width: 100%; 
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.footer_socialNetworks p{
+.footer_socialNetworks p {
   padding-top: 15px;
   margin: 0;
   font-size: 20px;
@@ -303,13 +292,11 @@ footer{
   font-weight: bold;
 }
 
-
-.footer_socialNetworks i{
+.footer_socialNetworks i {
   margin: 0;
   padding: 15px 5px;
   font-size: 30px;
   color: rgb(210, 203, 203);
-  
 }
 
 .footer_socialNetworks i:hover {
@@ -319,35 +306,31 @@ footer{
   color: var(--cyan);
   transition: width 0.3s ease-out;
 }
- 
 
-.footer_pay{
-  grid-column: 9/11;
+.footer_pay {
+  grid-column: 8/10;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.footer_pay p{
+.footer_pay p {
   margin: 0;
-  padding: 10px ;
+  padding: 10px;
   font-size: 15px;
   color: rgb(210, 203, 203);
 }
 
-.footer_pay i{
+.footer_pay i {
   margin: 0;
   padding: 5px;
-  font-size: 20px;
+  font-size: 23.5px;
   color: rgb(210, 203, 203);
 }
 
-
-
-
 /* Responsive para que no se desborde el parrafo de descripcion proyecto */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
   .title__text {
     transition: all 200ms;
     font-size: 2rem;
@@ -359,8 +342,51 @@ footer{
   .container__paragraph {
     margin-bottom: 5rem;
   }
-}
 
+  .footer_menu a {
+    font-weight: bold;
+    font-size: 12px;
+
+  }
+
+  .footer_socialNetworks {
+    grid-column: 5/6;
+  }
+
+  .footer_socialNetworks p {
+    font-size: 15px;
+  }
+
+  .footer_socialNetworks i {
+    padding: 10px 2px;
+    font-size: 22px;
+  }
+
+  .footer_socialNetworks i:hover {
+    font-size: 23px;
+  }
+
+
+  .footer_pay {
+    grid-column: 7/10;
+  }
+
+  .footer_pay p {
+    margin: 0;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(210, 203, 203);
+  }
+
+  .footer_pay i {
+    margin: 0;
+    padding: 5px;
+    font-size: 17px;
+    color: rgb(210, 203, 203);
+  }
+
+}
 
 /*todo responsive para navbar en table mobile */
 
@@ -372,12 +398,39 @@ footer{
 
 } */
 
-@media screen and (max-width:750px) {
+@media screen and (max-width: 768px) {
   .ourProyect {
     padding: 2rem;
   }
 
   .container__paragraph p {
     padding: 1rem;
+  }
+
+  .footer_menu ul {
+    
+    display: none;}
+
+  
+  .footer_socialNetworks {
+    grid-column: 1/6;
+  }
+
+  .footer_socialNetworks i {
+    padding: 10px 2px;
+    font-size: 25px;
+  }
+
+  .footer_socialNetworks i:hover {
+    font-size: 26px;
+  }
+
+  .footer_pay {
+    grid-column: 6/10;
+  }
+
+  .footer_pay i {
+    font-size: 24px;
+
   }
 }
