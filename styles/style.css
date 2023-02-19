@@ -200,6 +200,9 @@ form .btn {
   color:#03001c;
 } */
 /* perfiles */
+.container__cards{
+  margin-bottom: 5rem;
+}
 .title__perfiles {
   color: var(--cyan);
   text-align: center;
