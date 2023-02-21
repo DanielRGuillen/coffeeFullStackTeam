@@ -36,15 +36,26 @@ header {
 
 .container-fluid {
   background-color: var(--negro);
-  position: absolute;
-  margin-top: 5rem;
+  position: relative;
+  /* margin-top: 5rem; */
   display: flex;
   justify-content: space-around;
   /* margin-top: auto; */
 }
+.navbar-brand{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav p{
+  color: var(--blanco);
+  font-weight: bold;
+  text-shadow: -1.5px 1px #2ed7f990;
+
+}
 
 nav img {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   width: 60px;
   object-fit: contain;
   border-radius: 20%;
@@ -83,6 +94,10 @@ form .btn {
 .btn:hover {
   background-color: #7fffd6;
   color: #03001c;
+}
+/* color del menu hamburguesa */
+.navbar-toggler{
+  background-color: var(--cyan);
 }
 
 /* Posicionamiento de registrate y los iconos de carrito y usuario */
@@ -341,8 +356,18 @@ footer {
   color: rgb(210, 203, 203);
 }
 
-/* Responsive para que no se desborde el parrafo de descripcion proyecto */
+/* Responsive para que no se desborde el parrafo de descripcion proyecto y el header */
 @media screen and (max-width: 990px) {
+  .container-fluid{
+    display: flex;
+    flex-direction: row-reverse ;
+  }
+  .container-fluid p{
+    display: none;
+  }
+  .container-fluid a{
+    display: flex;
+  }
   .title__text {
     transition: all 200ms;
     font-size: 2rem;
