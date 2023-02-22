@@ -1,0 +1,141 @@
+:root {
+  --firstColor: #eeeeee;
+  --secondColor: #800000;
+  --thirdColor: #623222;
+  --bgColor: #800000;
+  --thirdColor: #fff;
+}
+
+
+/*! Form CONTACTO */
+
+.container{
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto; 
+  padding: 0 1.5em;
+  color: var(--bgColor);
+}
+.container__title{
+  color: var(--secondColor);  
+  text-align: center;
+  font-size: 2em;
+  margin: 0.5em 0 1em 0;
+
+}
+.container__contact{
+  box-shadow: 0 0 20px 0 rgb(129, 0, 0);
+  margin-bottom: 4rem;
+
+  
+}
+/* > *{} Le aplica a todos los elementos del container__contact */
+.container__contact > *{
+  padding: 1em;
+}
+.contact__form{
+  background-color: var(--firstColor)
+}
+
+.contact__form form{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contact__form form .oneColumn{
+  grid-column: 1 / 3;
+}
+.contact__form form div{
+  margin: 0;
+  padding: 1em;
+}
+
+
+
+.contact__form form button,
+.contact__form form input,
+.contact__form form textarea{
+  width: 100%;
+  padding: 0.7em;
+  margin-top: 0.3em;
+  border: none;
+  /* la siguiente linea quita el fondo de los bloques los cuales antes eran cajas blancas */
+  /* background: none; */
+  /* la siguiente linea quita el demarcdo de caja al hacer click para escribir */
+  /* outline: 0; */
+  color: var(--secondColor);
+  /* border-bottom: 1px solid darkred; */
+  border-radius: 1rem;
+  color: #800000;
+  box-shadow: 0 0.4rem 10px var(--secondColor);
+
+}
+.contact__form form input:focus{
+  outline-color: var(--secondColor);
+}
+.contact__form form textarea{
+  outline: none;
+}
+
+
+.contact__form form button{
+  background: darkred;
+  border: 0;
+  border-radius: 40px;
+  text-transform: uppercase;
+  padding: 1em;
+  color: var(--firstColor);
+  box-shadow: none;
+}
+.contact__form form button:hover,
+.contact__form form button:focus{
+  background-color: firebrick;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-10px);
+  box-shadow: 0 9px 5px rgba(5, 0, 0, 0.7);
+
+}
+.contact__form form button:active{
+  transform: translateY(0px);
+  box-shadow: none;
+}
+.contact__info{
+  background-color: rgba(0, 0, 0, 0.724);
+  margin: 0;
+  color: var(--firstColor)
+}
+.contact__info h4,
+.contact__info ul,
+.contact__info p{
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+.contact__info ul{
+  list-style: none;
+  padding: 0;
+}
+.contact__info ul li{
+  padding: 0.3em;
+}
+
+/* Responsive pantalla grnde */
+@media screen and (min-width: 850px) {
+
+  .container__contact > *{
+      padding: 2em;
+  }
+  .container__contact{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      margin-bottom: 4rem;
+  }
+  .contact__form{
+      grid-column: 1/3;
+      
+  }
+  .contact__info h4,
+  .contact__info ul,
+  .contact__info p{
+      padding: 1em;
+      text-align: left;
+  }
+}
