@@ -217,6 +217,11 @@ form .btn {
 /* perfiles */
 .container__cards{
   margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.col{
+  width: 500px;
 }
 .title__perfiles {
   color: var(--cyan);
@@ -233,7 +238,7 @@ form .btn {
   width: 300px;
   border-radius: 15px;
   margin: auto auto;
-  margin-top: 2rem;
+  margin-top: 5rem;
   opacity: 0.5;
   box-shadow: -10px 19px 14px -4px rgba(0, 0, 0, 0.92);
 }
