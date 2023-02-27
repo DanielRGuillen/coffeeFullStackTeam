@@ -53,8 +53,14 @@ header {
   position: relative;
   background-attachment: fixed;
   object-fit: cover;
-  position: fixed; /*fijar*/
-  z-index: 2;
+  
+}
+
+/*para hacer el nav fijo*/
+.nav-item-blue{
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
 }
 
 /*parte de arriba del header*/
@@ -65,6 +71,7 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: var(--negro-background);
+
 }
 
 /*logo*/
@@ -101,7 +108,7 @@ header {
   --darkreader-inline-color: #e8e6e3;
   --darkreader-inline-bgimage: initial;
   --darkreader-inline-bgcolor: #262a2b;
-  font-size: 19px;
+ 
 }
 
 /*primera parte del header*/
@@ -178,6 +185,7 @@ header {
 
 .container-fluid {
   background-color: var(--negro-background);
+  
 }
 
 .navbar {
@@ -317,9 +325,6 @@ header {
   .logo p {
     font-size: 15px;
   }
-  .logo p:hover {
-    font-size: 16px;
-  }
 
   .form-group img {
     width: 35px;
@@ -361,9 +366,6 @@ header {
   }
   .logo p {
     font-size: 13px;
-  }
-  .logo p:hover {
-    font-size: 14px;
   }
 
   .form-group img {
@@ -431,9 +433,6 @@ header {
   .logo p {
     font-size: 12px;
   }
-  .logo p:hover {
-    font-size: 13px;
-  }
 
   .form-group img {
     width: 25px;
@@ -478,9 +477,6 @@ header {
 
   .logo p {
     font-size: 11px;
-  }
-  .logo p:hover {
-    font-size: 12px;
   }
 
   .form-group img {
