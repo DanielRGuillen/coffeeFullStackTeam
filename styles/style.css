@@ -4,6 +4,11 @@
   --blue: #25bee8;
   --cyan: #36c4c6;
   --blanco: #efefef;
+    /* colores del logo */
+    --magenta: #bb0cd4;
+    --Azul: #4f91fb;
+    --morado: #7939fd;
+
 }
 
 body {

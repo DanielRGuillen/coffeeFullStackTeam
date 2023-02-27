@@ -1,31 +1,44 @@
 :root {
-  --firstColor: #eeeeee;
-  --secondColor: #800000;
-  --thirdColor: #623222;
-  --bgColor: #800000;
-  --thirdColor: #fff;
-}
+  --negro: #000000;
+  --deepblue: #0a3442;
+  --blue: #25bee8;
+  --cyan: #36c4c6;
+  --blanco: #efefef;
+    /* colores del logo */
+    --magenta: #bb0cd4;
+    --Azul: #4f91fb;
+    --morado: #7939fd;
 
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #4d4b52fa ;
+  
+} 
 
 /*! Form CONTACTO */
 
 .container{
-  max-width: 1170px;
   margin-left: auto;
   margin-right: auto; 
-  padding: 0 1.5em;
+  padding: 2rem 3rem;
   color: var(--bgColor);
+  
 }
 .container__title{
-  color: var(--secondColor);  
+  color: var(--morado);  
   text-align: center;
-  font-size: 2em;
+  font-size: 2rem;
   margin: 0.5em 0 1em 0;
 
 }
 .container__contact{
-  box-shadow: 0 0 20px 0 rgb(129, 0, 0);
+  box-shadow: 0 0 10px 0 rgb(187, 182, 182);
   margin-bottom: 4rem;
+  background-color: #d7d5d5ea; 
 
   
 }
@@ -36,6 +49,15 @@
 .contact__form{
   background-color: var(--firstColor)
 }
+ 
+label{
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color:#bb2b6b;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
 
 .contact__form form{
   display: grid;
@@ -56,8 +78,9 @@
 .contact__form form textarea{
   width: 100%;
   padding: 0.7em;
-  margin-top: 0.3em;
+  margin-top: 1em;
   border: none;
+  background-color: #88878760;
   /* la siguiente linea quita el fondo de los bloques los cuales antes eran cajas blancas */
   /* background: none; */
   /* la siguiente linea quita el demarcdo de caja al hacer click para escribir */
@@ -65,17 +88,15 @@
   color: var(--secondColor);
   /* border-bottom: 1px solid darkred; */
   border-radius: 1rem;
-  color: #800000;
-  box-shadow: 0 0.4rem 10px var(--secondColor);
+  /* color: #800000; */
+  /* box-shadow: 0 0.4rem 10px var(--secondColor); */
 
 }
-.contact__form form input:focus,
-.contact__form form textarea:focus{
-  transition: all 400ms ;
-  /*! background-color: al hacer focus cambia de color, definir color */
-  box-shadow: none;
-  transform: translateY(0.4rem);
-  outline-color: var(--secondColor);
+
+.contact__form form input:focus{
+  outline-color: var(--magenta);
+=======
+
 }
 .contact__form form input:focus::placeholder{
   color: transparent;
@@ -87,20 +108,20 @@
 
 
 .contact__form form button{
-  background: darkred;
+  background-image: radial-gradient( circle 732px at 96.2% 89.9%,  rgba(70,66,159,1) 0%, rgba(187,43,107,1) 92% );
   border: 0;
   border-radius: 40px;
   text-transform: uppercase;
   padding: 1em;
-  color: var(--firstColor);
+  color: var(--blanco);
+  font-weight: bolder;
+  letter-spacing: 2px;
   box-shadow: none;
 }
 .contact__form form button:hover,
 .contact__form form button:focus{
-  background-color: firebrick;
   transition: all 0.3s ease-in-out;
-  transform: translateY(-10px);
-  box-shadow: 0 9px 5px rgba(5, 0, 0, 0.7);
+  transform: translateY(-8px);
 
 }
 .contact__form form button:active{
@@ -108,15 +129,32 @@
   box-shadow: none;
 }
 .contact__info{
-  background-color: rgba(0, 0, 0, 0.724);
+  background-color:#30296b;
   margin: 0;
-  color: var(--firstColor)
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #efefef;
 }
 .contact__info h4,
 .contact__info ul,
 .contact__info p{
+  margin: 1.3rem auto;
+}
+.contact__info p:first-child{
+  text-align: right;
+  color: #0a3442;
+}
+.namepag{
+  font-size: 1.4rem;
   text-align: center;
-  margin: 0 0 1rem 0;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.namepag:hover{
+  transform: translateY(5px);
+  transition: .5s ease ease-out;
+  color: #bb2b6b;
 }
 .contact__info ul{
   list-style: none;
@@ -124,6 +162,9 @@
 }
 .contact__info ul li{
   padding: 0.3em;
+}
+.contact__info ul i{
+  color :#bb2b6b
 }
 
 /* Responsive pantalla grnde */
@@ -142,9 +183,8 @@
       
   }
   .contact__info h4,
-  .contact__info ul,
+  .contact__info ul, 
   .contact__info p{
-      padding: 1em;
-      text-align: left;
+      padding: 0.5em;
   }
 }
