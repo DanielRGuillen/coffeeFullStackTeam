@@ -92,9 +92,16 @@ label{
   /* box-shadow: 0 0.4rem 10px var(--secondColor); */
 
 }
+
 .contact__form form input:focus{
   outline-color: var(--magenta);
+=======
+
 }
+.contact__form form input:focus::placeholder{
+  color: transparent;
+}
+
 .contact__form form textarea{
   outline: none;
 }
