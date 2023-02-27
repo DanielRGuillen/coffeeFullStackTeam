@@ -1,3 +1,12 @@
+:root {
+  --azul:  #499af8;;
+  --morado:#601de9;
+  --rosado: #ba0bd6;
+  --negro-background: #242222c6;
+  --blanco:#f5f5f5;
+}
+
+
 /*barra Scrollbar*/
 
 ::-webkit-scrollbar {
@@ -9,7 +18,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #601de9;
+  background: var(--morado)
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -55,7 +64,7 @@ header {
   grid-template-columns: repeat(10 1fr);
   justify-content: space-around;
   align-items: center;
-  background-color: #242222c6;
+  background-color: var(--negro-background);
 }
 
 /*logo*/
@@ -69,20 +78,20 @@ header {
 .logo p {
   font-weight: bold;
   font-size: 18px;
-  color: #499af8;
+  color: var(--azul);
   text-align: center;
 }
 .on {
   font-weight: bold;
-  color: #ba0bd6;
+  color: var(--rosado);
 }
 .tw {
   font-weight: bold;
-  color: #601de9;
+  color: var(--morado);
 }
 
 .logo p:hover {
-  color: #499af8;
+  color: var(--azul);
   border-radius: 20px;
   background: rgb(51, 51, 51);
   text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px,
@@ -143,7 +152,7 @@ header {
 }
 
 .carrito span {
-  color: white;
+  color: var(--blanco);
   font-weight: bold;
 }
 
@@ -162,18 +171,18 @@ header {
   );
   font-size: 14px;
   font-weight: bold;
-  color: white;
+  color: var(--blanco);
 }
 
 /*segunda parte del header - navbar*/
 
 .container-fluid {
-  background-color: #242222c6;
+  background-color: var(--negro-background);
 }
 
 .navbar {
   padding: 0 !important;
-  color: #fff;
+  color: var(--blanco);
   font-weight: bold;
   border-radius: 0;
   box-shadow: none;
@@ -199,7 +208,7 @@ header {
 
 /*li del menú*/
 .header-blue .navbar.navbar-light .navbar-nav .nav-link {
-  color: white;
+  color: var(--blanco);
 }
 
 .header-blue .navbar.navbar-light .navbar-nav .nav-link:focus,
@@ -224,13 +233,13 @@ header {
   margin-top: -1px;
   border-radius: 5px;
   font-weight: bold;
-  background-color: #242222c6;
+  background-color: var(--negro-background);
 }
 
 .header-blue .navbar .dropdown-menu .dropdown-item:focus,
 .header-blue .navbar .dropdown-menu .dropdown-item {
   line-height: 1.5;
-  color: white;
+  color: var(--blanco);
 }
 
 .header-blue .navbar .dropdown-menu .dropdown-item:focus,
@@ -254,7 +263,7 @@ header {
   min-height: 100vh;
   text-align: center;
   margin: 0 auto;
-  color: white;
+  color: var(--blanco);
   position: relative;
   padding: 0 20px;
   background-color: #0909095e;
@@ -341,6 +350,9 @@ header {
     padding: 3px 8px;
     font-size: 13px;
   }
+  .navbar .navbar-nav > li > .dropdown-menu {
+    background: transparent;
+  }
 }
 
 @media (max-width: 630px) {
@@ -392,7 +404,6 @@ header {
 
   .navbar .navbar-nav > li > .dropdown-menu {
     font-size: 13px;
-    background: transparent;
   }
 
   .banner_Text {
