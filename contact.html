@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,86 +8,62 @@
   <link rel="stylesheet" href="./styles/contact.css">
   <title>Contacto</title>
 </head>
-<body>
-  
-    <!-- INICIA CONTACTO -->
-    <section class="container">
-      <h2 class="container__title">Contáctanos</h2>
-      <div class="container__contact">
-        <!--todo INICIA FORMULARIO CONTACTO-->
-        <div class="contact__form">
-          <h3>Contáctanos</h3>
-          <form action="https://formspree.io/f/mzbqegda" method="POST" id="formulario" name="" onsubmit="return validacion()">
-            <div>
-              <label for="nombreCompleto">Nombre Completo</label>
-              <input
-                type="text"
-                name="nombreCompleto"
-                id="nombreCompleto"
-                placeholder="Escribe tu nombre..."
-                required
-              />
-            </div>
-            <div>
-              <label for="">Correo Electrónico</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Ingresa tu correo electrónico"
-                required
-              />
-            </div>
-            <div>
-              <label for="telefono">Número de Télefono</label>
-              <input
-                type="tel"
-                name="telefono"
-                id="telefono"
-                placeholder="ingresa tu teléfono celular"
-                required
-              />
-            </div>
-            <div>
-              <label for="">Motivo de solicitud</label>
-              <input type="text" name="motivo" />
-            </div>
-            <div class="oneColumn">
-              <label for="">Mensaje</label>
-              <textarea
-                name="mensaje"
-                id="mensaje"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
-            <div class="oneColumn">
-              <button type="submit"id="button">Enviar</button>
-            </div>
-          </form>
-        </div>
-        <!--todo INICIA INFO para CONTACTO-->
 
-        <div class="contact__info">
-          <h4>Más información</h4>
-          <ul>
-            <li><i class="fa-solid fa-location-dot"></i>Usaquén</li>
-            <li><i class="fa-solid fa-phone-flip"></i>11 11 11 11</li>
-            <li><i class="fa-solid fa-envelope"></i>blogdelcafe@gm ail.com</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-            voluptas excepturi, qui magni accusamus et beatae! Incidunt,
-            veritatis vero. Eum?
-          </p>
-          <p>BlogCafe.com</p>
-        </div>
+<body>
+
+  <!-- INICIA CONTACTO -->
+  <section class="container">
+    <h2 class="container__title">Contáctanos titulo a modificar cuando se agrege el nav </h2>
+    <div class="container__contact">
+      <!--todo INICIA FORMULARIO CONTACTO-->
+      <div class="contact__form">
+        <form action="https://formspree.io/f/mzbqegda" method="POST" id="formulario" name=""
+          onsubmit="return validacion()">
+          <div>
+            <label for="nombreCompleto">Nombre Completo</label>
+            <input type="text" name="nombreCompleto" id="nombreCompleto" placeholder="Escribe tu nombre..." required />
+          </div>
+          <div>
+            <label for="">Correo Electrónico</label>
+            <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico" required />
+          </div>
+          <div>
+            <label for="telefono">Número de Télefono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Ingresa tu teléfono celular" required />
+          </div>
+          <div>
+            <label for="">Motivo de solicitud</label>
+            <input type="text" name="motivo" />
+          </div>
+          <div class="oneColumn">
+            <label for="">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+          </div>
+          <div class="oneColumn">
+            <button type="submit" id="button">Enviar</button>
+          </div>
+        </form>
       </div>
-    </section>
-    <script
-    src="https://kit.fontawesome.com/fd199912ef.js"
-    crossorigin="anonymous"
-    ></script>
-    <script src="./scripts/contact.js"></script>
+      <!--todo INICIA INFO para CONTACTO-->
+
+      <div class="contact__info">
+        <h4>Más información</h4>
+        <ul>
+          <!-- <li><i class="fa-solid fa-location-dot"></i>  Usaquén</li> -->
+          <li><i class="fa-solid fa-phone-flip"></i> 11 11 11 11</li>
+          <li><i class="fa-brands fa-whatsapp"></i></i> 333 333 3333</li>
+          <li><i class="fa-solid fa-envelope"></i> contacto@audicolombia.com</li>
+        </ul>
+        <p>
+          Esperamos oir acerca de tí para poder resolver todas tus dudas y tu puedas disfrutar al máximo de los sonidos
+          que más te apasionan.
+        </p>
+        <p class="namepag">audifonoscolombia.com</p>
+      </div>
+    </div>
+  </section>
+  <script src="https://kit.fontawesome.com/fd199912ef.js" crossorigin="anonymous"></script>
+  <script src="./scripts/contact.js"></script>
 </body>
+
 </html>
