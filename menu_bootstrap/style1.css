@@ -1,11 +1,10 @@
 :root {
-  --azul:  #499af8;;
-  --morado:#601de9;
+  --azul: #499af8;
+  --morado: #601de9;
   --rosado: #ba0bd6;
-  --negro-background: #242222c6;
-  --blanco:#f5f5f5;
+  --negro-background: #2e2b2bfe;
+  --blanco: #f5f5f5;
 }
-
 
 /*barra Scrollbar*/
 
@@ -18,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--morado)
+  background: var(--morado);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -32,14 +31,10 @@
 }
 
 body {
-  width: 100vw;
-  background: rgb(32, 30, 30);
-  background: linear-gradient(
-    90deg,
-    rgba(32, 30, 30, 0.9472163865546218) 25%,
-    rgba(15, 15, 15, 0.8911939775910365) 42%
-  );
+  width: 100%;
+  background-color: var(--negro-background);
   margin: 0;
+  padding: 0;
 }
 
 header {
@@ -48,16 +43,14 @@ header {
   background-size: cover; /*para que la imagen no pierda su tamaño*/
   background-position: center;
   max-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
   margin: 0;
   position: relative;
-  background-attachment: fixed;
   object-fit: cover;
-  
 }
 
 /*para hacer el nav fijo*/
-.nav-item-blue{
+.nav-item-blue {
   width: 100%;
   position: fixed;
   z-index: 9999;
@@ -71,7 +64,7 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: var(--negro-background);
-
+  padding-top: 3px;
 }
 
 /*logo*/
@@ -87,6 +80,7 @@ header {
   font-size: 18px;
   color: var(--azul);
   text-align: center;
+  margin: 0;
 }
 .on {
   font-weight: bold;
@@ -108,7 +102,6 @@ header {
   --darkreader-inline-color: #e8e6e3;
   --darkreader-inline-bgimage: initial;
   --darkreader-inline-bgcolor: #262a2b;
- 
 }
 
 /*primera parte del header*/
@@ -185,7 +178,7 @@ header {
 
 .container-fluid {
   background-color: var(--negro-background);
-  
+  padding: 0;
 }
 
 .navbar {
@@ -199,7 +192,7 @@ header {
 }
 
 .header-blue .navbar .navbar-collapse {
-  border-top: 1px solid rgba(121, 116, 116, 0.547);
+  border-top: 1px solid rgba(82, 73, 73, 0.652);
   margin-top: 0.5rem;
   text-decoration: none;
 }
@@ -221,7 +214,7 @@ header {
 
 .header-blue .navbar.navbar-light .navbar-nav .nav-link:focus,
 .header-blue .navbar.navbar-light .navbar-nav .nav-link:hover {
-  color: #0275f8;
+  color: #2c057bfe;
   text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px,
     rgb(255, 255, 255) 0px 0px 15px, rgb(255, 45, 149) 0px 0px 20px,
     rgb(255, 45, 149) 0px 0px 30px, rgb(255, 45, 149) 0px 0px 40px,
@@ -268,13 +261,13 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 950px;
+  width: 100%;
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
   color: var(--blanco);
   position: relative;
-  padding: 0 20px;
-  background-color: #0909095e;
+  background-color: #24222243;
 }
 
 .banner_Text h1 {
@@ -306,6 +299,10 @@ header {
   100% {
     transform: translateY(20px);
   }
+}
+
+main {
+  width: 80%;
 }
 
 /*todo el tema dew responsive*/
@@ -487,6 +484,14 @@ header {
     display: none;
   }
 
+  .carrito img {
+    width: 20px;
+  }
+
+  .carrito span {
+    font-size: 10px;
+  }
+
   .header-blue .navbar.navbar-light .navbar-nav .nav-link {
     font-size: 11px;
   }
@@ -495,8 +500,8 @@ header {
     font-size: 11px;
   }
   .action-button {
-    padding: 3px 6px;
-    font-size: 9px;
+    padding: 2px 5px;
+    font-size: 8px;
   }
 
   .navbar-toggler-icon {
