@@ -95,8 +95,6 @@ label{
 
 .contact__form form input:focus{
   outline-color: var(--magenta);
-=======
-
 }
 .contact__form form input:focus::placeholder{
   color: transparent;
