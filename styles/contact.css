@@ -15,8 +15,7 @@
   padding: 0;
 }
 body{
-  background-color: #4d4b52fa ;
-  
+  background-color: #292828fe ;
 } 
 
 /*! Form CONTACTO */
@@ -25,20 +24,25 @@ body{
   margin-left: auto;
   margin-right: auto; 
   padding: 2rem 3rem;
-  color: var(--bgColor);
-  
 }
 .container__title{
-  color: var(--morado);  
+  text-shadow: 0px 0px 18px rgba(79,145,251,0.58);
+  color: #BB0CD4;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.7rem;
   margin: 0.5em 0 1em 0;
 
+}
+.container__title i:hover{
+  transform: translateY(-4px);
+  rotate: 365deg;
+  transition: 700ms;
+  color: #efefef;
 }
 .container__contact{
   box-shadow: 0 0 10px 0 rgb(187, 182, 182);
   margin-bottom: 4rem;
-  background-color: #d7d5d5ea; 
+  /* background-color: #d7d5d5ea;  */
 
   
 }
@@ -53,9 +57,11 @@ body{
 label{
   font-size: 1.2rem;
   letter-spacing: 2px;
-  color:#bb2b6b;
-  font-weight: bold;
+  color:var(--morado);
   text-transform: capitalize;
+}
+label:hover{
+  color: #d37cde;
 }
 
 
@@ -95,6 +101,8 @@ label{
 
 .contact__form form input:focus{
   outline-color: var(--magenta);
+
+
 }
 .contact__form form input:focus::placeholder{
   color: transparent;
@@ -162,7 +170,14 @@ label{
   padding: 0.3em;
 }
 .contact__info ul i{
-  color :#bb2b6b
+  color :#bb2b6b;
+  font-size: 1.4rem;
+}
+.contact__info ul i:active{
+transform: scale(0.9);
+color :#e867a1;
+transition: ease-in-out;
+/*efecto para cuando el visitante oprima el ícono*/
 }
 
 /* Responsive pantalla grnde */
