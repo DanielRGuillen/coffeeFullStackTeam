@@ -17,7 +17,10 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
     ></script>
     <link rel="stylesheet" href="./style1.css" />
+    <link rel="stylesheet" href="../styles/contact.css">
     <link rel="icon" href="./assets/img/tobotic.png" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./controler.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -104,7 +107,7 @@
                     </div>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#">Contáctenos</a>
+                    <a class="nav-link" onclick="openContactPage()" href="#">Contáctenos</a>
                   </li>
 
                   <li class="nav-item" role="presentation">
@@ -133,6 +136,7 @@
         </button>
       </div>
     </header>
+    <div id="parent"></div>
     <main></main>
     <script
       type="text/javascript"
