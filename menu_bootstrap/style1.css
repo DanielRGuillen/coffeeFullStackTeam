@@ -261,13 +261,14 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 950px;
+  min-height: 850px;
   width: 100%;
   text-align: center;
   margin: 0;
   color: var(--blanco);
   position: relative;
   background-color: #24222243;
+  padding: 20px;
 }
 
 .banner_Text h1 {
@@ -319,6 +320,9 @@ main {
 }
 
 @media (max-width: 768px) {
+  header {
+    max-height: 60vh;
+  }
   .logo p {
     font-size: 15px;
   }
@@ -360,6 +364,7 @@ main {
 @media (max-width: 630px) {
   header {
     align-items: center;
+    max-height: 45vh;
   }
   .logo p {
     font-size: 13px;
@@ -397,12 +402,15 @@ main {
     padding: 3px 8px;
     font-size: 11px;
   }
+
   .header-blue .navbar.navbar-light .navbar-nav .nav-link {
     font-size: 13px;
+    padding: 3px;
   }
 
   .navbar .navbar-nav > li > .dropdown-menu {
     font-size: 13px;
+    line-height: 1;
   }
 
   .banner_Text {
@@ -411,16 +419,26 @@ main {
   }
 
   .banner_Text h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .banner_Text p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
-  #scroll-btn {
-    display: none;
+  #scroll-btn img {
+    width: 40px;
   }
+
+  @keyframes move-down {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
   .navbar-toggler-icon {
     font-size: 0.7rem; /* Tamaño del icono hamburguesa */
   }
@@ -459,12 +477,13 @@ main {
     padding: 3px 7px;
     font-size: 10px;
   }
+
   .banner_Text h1 {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .banner_Text p {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 @media (max-width: 500px) {
@@ -494,6 +513,7 @@ main {
 
   .header-blue .navbar.navbar-light .navbar-nav .nav-link {
     font-size: 11px;
+    padding: 2px;
   }
 
   .navbar .navbar-nav > li > .dropdown-menu {
