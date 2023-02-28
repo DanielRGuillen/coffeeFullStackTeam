@@ -6,14 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="import" href="./menu_bootstrap/navbar.html">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
   <title>Contacto</title>
 </head>
 
 <body>
+  <header>
+    <div id="myDiv"></div>
+    <script src="source.js"></script>
+  </header>
 
   <!-- INICIA CONTACTO -->
   <section class="container">
-    <h2 class="container__title">Contáctanos titulo a modificar cuando se agrege el nav </h2>
+    <h2 class="container__title">Contáctanos <i class="fa-regular fa-face-smile-wink"></i></h2>
     <div class="container__contact">
       <!--todo INICIA FORMULARIO CONTACTO-->
       <div class="contact__form">
@@ -24,7 +32,7 @@
             <input type="text" name="nombreCompleto" id="nombreCompleto" placeholder="Escribe tu nombre..." required />
           </div>
           <div>
-            <label for="">Correo Electrónico</label>
+            <label for="email">Correo Electrónico</label>
             <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico" required />
           </div>
           <div>
@@ -32,8 +40,8 @@
             <input type="tel" name="telefono" id="telefono" placeholder="Ingresa tu teléfono celular" required />
           </div>
           <div>
-            <label for="">Motivo de solicitud</label>
-            <input type="text" name="motivo" />
+            <label for="motivo">Motivo de solicitud</label>
+            <input type="text" name="motivo" id="motivo" />
           </div>
           <div class="oneColumn">
             <label for="">Mensaje</label>
@@ -51,7 +59,7 @@
         <ul>
           <!-- <li><i class="fa-solid fa-location-dot"></i>  Usaquén</li> -->
           <li><i class="fa-solid fa-phone-flip"></i> 11 11 11 11</li>
-          <li><i class="fa-brands fa-whatsapp"></i></i> 333 333 3333</li>
+          <li><a href="http://wa.me/573232265148"><i class="fa-brands fa-whatsapp"></i></a> 333 333 3333</li>
           <li><i class="fa-solid fa-envelope"></i> contacto@audicolombia.com</li>
         </ul>
         <p>
@@ -63,7 +71,8 @@
     </div>
   </section>
   <script src="https://kit.fontawesome.com/fd199912ef.js" crossorigin="anonymous"></script>
-  <script src="./scripts/contact.js"></script>
+
+
 </body>
 
 </html>
