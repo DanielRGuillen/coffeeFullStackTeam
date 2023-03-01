@@ -261,7 +261,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 850px;
+  min-height: 100vh;
   width: 100%;
   text-align: center;
   margin: 0;
@@ -269,6 +269,13 @@ header {
   position: relative;
   background-color: #24222243;
   padding: 20px;
+}
+
+.banner_Text article {
+  display: block;
+  width: 80%;
+  padding-top: 150px;
+  align-items: center;
 }
 
 .banner_Text h1 {
@@ -302,15 +309,168 @@ header {
   }
 }
 
-main {
-  width: 80%;
+/*footer*/
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  border: 0;
+  width: 100vw;
+  align-items: center;
+  background-color: var(--negro);
 }
 
+.footer_menu {
+  grid-column: 1/5;
+  width: 100%;
+}
+
+.footer_menu ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.footer_menu a {
+  color: rgb(210, 203, 203);
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer_menu li:hover {
+  bottom: 0;
+  left: 0;
+  background-color: #4372a81d;
+  font-weight: bold;
+  transition: width 0.3s ease-out;
+}
+
+.footer_socialNetworks {
+  grid-column: 5/7;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_socialNetworks p {
+  padding-top: 15px;
+  margin: 0;
+  font-size: 20px;
+  color: rgb(210, 203, 203);
+  font-weight: bold;
+}
+
+.footer_socialNetworks i {
+  margin: 0;
+  padding: 15px 5px;
+  font-size: 30px;
+  color: rgb(210, 203, 203);
+}
+
+.footer_socialNetworks i:hover {
+  font-size: 31px;
+  bottom: 0;
+  left: 0;
+  color: var(--cyan);
+  transition: width 0.3s ease-out;
+}
+
+.footer_pay {
+  grid-column: 8/10;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_pay p {
+  margin: 0;
+  padding: 10px;
+  font-size: 15px;
+  color: rgb(210, 203, 203);
+}
+
+.footer_pay i {
+  margin: 0;
+  padding: 5px;
+  font-size: 23.5px;
+  color: rgb(210, 203, 203);
+}
+
+
+
+
+
+
+
 /*todo el tema dew responsive*/
+/*responsive dispositivos en pantalla horizontal*/
+@media (max-width: 846px) and (min-height: 414px) {
+  #scroll-btn {
+    display: none;
+  }
+
+  .banner_Text h1 {
+    font-size: 45px;
+  }
+
+  .banner_Text p {
+    font-size: 20px;
+  }
+}
+
+/*responsive dispositivos de pantalla vertical y computadores*/
 @media (max-width: 990px) {
   .form-group .form-control {
     width: 280px;
   }
+
+  .footer_menu a {
+    font-weight: bold;
+    font-size: 12px;
+
+  }
+
+  .footer_socialNetworks {
+    grid-column: 5/6;
+  }
+
+  .footer_socialNetworks p {
+    font-size: 15px;
+  }
+
+  .footer_socialNetworks i {
+    padding: 10px 2px;
+    font-size: 22px;
+  }
+
+  .footer_socialNetworks i:hover {
+    font-size: 23px;
+  }
+
+
+  .footer_pay {
+    grid-column: 7/10;
+  }
+
+  .footer_pay p {
+    margin: 0;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(210, 203, 203);
+  }
+
+  .footer_pay i {
+    margin: 0;
+    padding: 5px;
+    font-size: 17px;
+    color: rgb(210, 203, 203);
+  }
+
 }
 
 @media (max-width: 850px) {
@@ -320,9 +480,6 @@ main {
 }
 
 @media (max-width: 768px) {
-  header {
-    max-height: 60vh;
-  }
   .logo p {
     font-size: 15px;
   }
@@ -356,16 +513,48 @@ main {
     padding: 3px 8px;
     font-size: 13px;
   }
-  .navbar .navbar-nav > li > .dropdown-menu {
-    background: transparent;
+  
+
+  .banner_Text {
+    min-height: 20vh;
+  }
+
+  .banner_Text h1 {
+    font-size: 40px;
+  }
+
+  .banner_Text p {
+    font-size: 20px;
+  }
+  .footer_menu ul {
+    
+    display: none;}
+
+  
+  .footer_socialNetworks {
+    grid-column: 1/6;
+  }
+
+  .footer_socialNetworks i {
+    padding: 10px 2px;
+    font-size: 25px;
+  }
+
+  .footer_socialNetworks i:hover {
+    font-size: 26px;
+  }
+
+  .footer_pay {
+    grid-column: 6/10;
+  }
+
+  .footer_pay i {
+    font-size: 24px;
+
   }
 }
 
 @media (max-width: 630px) {
-  header {
-    align-items: center;
-    max-height: 45vh;
-  }
   .logo p {
     font-size: 13px;
   }
@@ -411,6 +600,7 @@ main {
   .navbar .navbar-nav > li > .dropdown-menu {
     font-size: 13px;
     line-height: 1;
+    background: transparent;
   }
 
   .banner_Text {
