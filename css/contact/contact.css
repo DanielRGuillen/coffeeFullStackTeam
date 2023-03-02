@@ -42,9 +42,6 @@ body{
 .container__contact{
   box-shadow: 0 0 10px 0 rgb(187, 182, 182);
   margin-bottom: 4rem;
-  /* background-color: #d7d5d5ea;  */
-
-  
 }
 /* > *{} Le aplica a todos los elementos del container__contact */
 .container__contact > *{
@@ -87,16 +84,8 @@ label:hover{
   margin-top: 1em;
   border: none;
   background-color: #88878760;
-  /* la siguiente linea quita el fondo de los bloques los cuales antes eran cajas blancas */
-  /* background: none; */
-  /* la siguiente linea quita el demarcdo de caja al hacer click para escribir */
-  /* outline: 0; */
   color: var(--secondColor);
-  /* border-bottom: 1px solid darkred; */
   border-radius: 1rem;
-  /* color: #800000; */
-  /* box-shadow: 0 0.4rem 10px var(--secondColor); */
-
 }
 
 .contact__form form input:focus{
