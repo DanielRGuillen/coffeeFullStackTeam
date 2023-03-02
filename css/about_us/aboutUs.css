@@ -42,10 +42,8 @@ header {
 .container-fluid {
   background-color: var(--negro);
   position: relative;
-  /* margin-top: 5rem; */
   display: flex;
   justify-content: space-around;
-  /* margin-top: auto; */
 }
 .navbar-brand{
   display: flex;
@@ -60,20 +58,14 @@ nav p{
 }
 
 nav img {
-  /* margin-top: 40px; */
   width: 60px;
   object-fit: contain;
   border-radius: 20%;
   background-color: var(--blanco);
 }
 
-/* .active{
-  background-color: var(--blue)
-} */
-
 .navbar-nav li a {
   color: white;
-  /* background-color: chartreuse; */
   display: inline-block;
   margin: 0 10px;
   text-decoration: none;
@@ -86,7 +78,6 @@ nav img {
 
 form {
   margin-right: 16rem;
-  /* background-color: red; */
 }
 
 form .btn {
@@ -107,11 +98,9 @@ form .btn {
 
 /* Posicionamiento de registrate y los iconos de carrito y usuario */
 .log-cart {
-  /* background-color: blueviolet; */
   width: 200px;
   position: absolute;
   right: 0;
-  /* margin-bottom: 2rem; */
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -120,7 +109,6 @@ form .btn {
 /* PARTE DE ENVIOS */
 .envios {
   color: #000000;
-
   width: 100%;
   font-weight: 600;
   letter-spacing: 2.7px;
@@ -173,52 +161,6 @@ form .btn {
   color: var(--negro);
 }
 
-/* 
-.container-sm{
-
-  margin-top: 10rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70vw;
-  height: 70vh;
-  display: flex;
-  align-items: center;
-}
-.title__container{
-  
-  margin-left: 3rem;
-  margin-right: 10rem;
-  color: var(--cyan);
-
-}
-.title__text {
-  position: relative;
-  font-size: 3rem;
-  
-}
-
-.container__paragraph{
-  
-  min-width: 300px;
-  
-  border-radius: 15px;
-  opacity: 0.5;
-  box-shadow: 1px 10px 8px -4px var(--blanco);
-  color: white;
-  padding: 10px 10px;
-  overflow: hidden;
-  font-size: 1.4rem;
-  text-align: justify;
-}
-.container__paragraph:hover {
-  transition: all 500ms;
-  transform: scale(1.25);
-  border: 5px #B6EADA solid;
-  background-color: var(--cyan);
-  opacity: 1;
-  box-shadow: 1px 19px 14px -4px rgba(0,0,0,0.92);
-  color:#03001c;
-} */
 /* perfiles */
 .container__cards{
   margin-bottom: 5rem;
@@ -253,10 +195,6 @@ form .btn {
   opacity: 1;
 }
 
-/* .perfiles{
-  background-color: rgb(128, 243, 251);
-  position: absolute;
-} */
 /* Ajuste tamaño fotos */
 .perfiles img {
   width: 15rem;
@@ -273,7 +211,6 @@ form .btn {
   transition: all 400ms;
   border-radius: 50%;
   filter: grayscale(0);
-  /* brightness(1.2) contrast(1.2) */
   border: solid 4px white;
 }
 
@@ -436,14 +373,6 @@ footer {
 }
 
 /*todo responsive para navbar en table mobile */
-
-/* @media screen and (max-width: 990px){
-    .container-fluid{
-      margin: 0;
-      position: static;
-    }
-
-} */
 
 @media screen and (max-width: 768px) {
   .ourProyect {

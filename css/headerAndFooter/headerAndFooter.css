@@ -38,7 +38,7 @@ body {
 }
 
 header {
-  background-image: url("./assets/img/c2f4244a-72aa-4014-a520-6e1f534f40ef.jpeg");
+  background-image: url("../../assets/headerAndFooter/backroundImgWebp.webp");
   background-repeat: no-repeat;
   background-size: cover; /*para que la imagen no pierda su tamaño*/
   background-position: center;
