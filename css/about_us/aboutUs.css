@@ -4,126 +4,10 @@
   --blue: #25bee8;
   --cyan: #36c4c6;
   --blanco: #efefef;
-    /* colores del logo */
-    --magenta: #bb0cd4;
-    --Azul: #4f91fb;
-    --morado: #7939fd;
-
-}
-
-body {
-  margin: 0;
-  box-sizing: border-box;
-  background: rgb(10, 52, 66);
-  background: linear-gradient(
-    148deg,
-    rgba(10, 52, 66, 1) 28%,
-    rgba(3, 0, 28, 1) 99%
-  );
-  font-family: "Libre Franklin", sans-serif;
-  overflow-x: hidden;
-}
-
-header {
-  background-color: aquamarine;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  
-}
-
-
-
-.navbar {
-  padding: 0;
-}
-
-.container-fluid {
-  background-color: var(--negro);
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-}
-.navbar-brand{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-nav p{
-  color: var(--blanco);
-  font-weight: bold;
-  text-shadow: -1.5px 1px #2ed7f990;
-
-}
-
-nav img {
-  width: 60px;
-  object-fit: contain;
-  border-radius: 20%;
-  background-color: var(--blanco);
-}
-
-.navbar-nav li a {
-  color: white;
-  display: inline-block;
-  margin: 0 10px;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-weight: lighter;
-  font-size: 15px;
-  letter-spacing: 0.9px;
-  font-weight: bold;
-}
-
-form {
-  margin-right: 16rem;
-}
-
-form .btn {
-  border-radius: 20px;
-  border: var(--blue) 1px solid;
-  color: var(--blue);
-}
-
-/* estilo boton buscar */
-.btn:hover {
-  background-color: #7fffd6;
-  color: #03001c;
-}
-/* color del menu hamburguesa */
-.navbar-toggler{
-  background-color: var(--cyan);
-}
-
-/* Posicionamiento de registrate y los iconos de carrito y usuario */
-.log-cart {
-  width: 200px;
-  position: absolute;
-  right: 0;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-}
-
-/* PARTE DE ENVIOS */
-.envios {
-  color: #000000;
-  width: 100%;
-  font-weight: 600;
-  letter-spacing: 2.7px;
-  background-color: #b6eada;
-  margin-top: 7.5rem;
-}
-
-.envios p {
-  font-size: 15px;
-  padding: 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
+  /* colores del logo */
+  --magenta: #bb0cd4;
+  --Azul: #4f91fb;
+  --morado: #7939fd;
 }
 
 /* CONTENEDOR DEL PARRAFO Y NUESTRO PROYECTO */
@@ -162,12 +46,12 @@ form .btn {
 }
 
 /* perfiles */
-.container__cards{
+.container__cards {
   margin-bottom: 5rem;
   display: flex;
   justify-content: center;
 }
-.col{
+.col {
   width: 500px;
 }
 .title__perfiles {
@@ -214,105 +98,16 @@ form .btn {
   border: solid 4px white;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  border: 0;
-  width: 100vw;
-  align-items: center;
-  background-color: var(--negro);
-}
-
-.footer_menu {
-  grid-column: 1/5;
-  width: 100%;
-}
-
-.footer_menu ul {
-  margin: 0;
-  list-style: none;
-  display: flex;
-  gap: 10px;
-}
-
-.footer_menu a {
-  color: rgb(210, 203, 203);
-  font-weight: bold;
-  font-size: 15px;
-  text-decoration: none;
-}
-
-.footer_menu li:hover {
-  bottom: 0;
-  left: 0;
-  background-color: #4372a81d;
-  font-weight: bold;
-  transition: width 0.3s ease-out;
-}
-
-.footer_socialNetworks {
-  grid-column: 5/7;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer_socialNetworks p {
-  padding-top: 15px;
-  margin: 0;
-  font-size: 20px;
-  color: rgb(210, 203, 203);
-  font-weight: bold;
-}
-
-.footer_socialNetworks i {
-  margin: 0;
-  padding: 15px 5px;
-  font-size: 30px;
-  color: rgb(210, 203, 203);
-}
-
-.footer_socialNetworks i:hover {
-  font-size: 31px;
-  bottom: 0;
-  left: 0;
-  color: var(--cyan);
-  transition: width 0.3s ease-out;
-}
-
-.footer_pay {
-  grid-column: 8/10;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer_pay p {
-  margin: 0;
-  padding: 10px;
-  font-size: 15px;
-  color: rgb(210, 203, 203);
-}
-
-.footer_pay i {
-  margin: 0;
-  padding: 5px;
-  font-size: 23.5px;
-  color: rgb(210, 203, 203);
-}
-
 /* Responsive para que no se desborde el parrafo de descripcion proyecto y el header */
 @media screen and (max-width: 990px) {
-  .container-fluid{
+  .container-fluid {
     display: flex;
-    flex-direction: row-reverse ;
+    flex-direction: row-reverse;
   }
-  .container-fluid p{
+  .container-fluid p {
     display: none;
   }
-  .container-fluid a{
+  .container-fluid a {
     display: flex;
   }
   .title__text {
@@ -326,50 +121,6 @@ footer {
   .container__paragraph {
     margin-bottom: 5rem;
   }
-
-  .footer_menu a {
-    font-weight: bold;
-    font-size: 12px;
-
-  }
-
-  .footer_socialNetworks {
-    grid-column: 5/6;
-  }
-
-  .footer_socialNetworks p {
-    font-size: 15px;
-  }
-
-  .footer_socialNetworks i {
-    padding: 10px 2px;
-    font-size: 22px;
-  }
-
-  .footer_socialNetworks i:hover {
-    font-size: 23px;
-  }
-
-
-  .footer_pay {
-    grid-column: 7/10;
-  }
-
-  .footer_pay p {
-    margin: 0;
-    padding: 8px;
-    font-size: 15px;
-    font-weight: bold;
-    color: rgb(210, 203, 203);
-  }
-
-  .footer_pay i {
-    margin: 0;
-    padding: 5px;
-    font-size: 17px;
-    color: rgb(210, 203, 203);
-  }
-
 }
 
 /*todo responsive para navbar en table mobile */
@@ -381,32 +132,5 @@ footer {
 
   .container__paragraph p {
     padding: 1rem;
-  }
-
-  .footer_menu ul {
-    
-    display: none;}
-
-  
-  .footer_socialNetworks {
-    grid-column: 1/6;
-  }
-
-  .footer_socialNetworks i {
-    padding: 10px 2px;
-    font-size: 25px;
-  }
-
-  .footer_socialNetworks i:hover {
-    font-size: 26px;
-  }
-
-  .footer_pay {
-    grid-column: 6/10;
-  }
-
-  .footer_pay i {
-    font-size: 24px;
-
   }
 }
