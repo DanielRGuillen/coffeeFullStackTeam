@@ -5,6 +5,9 @@
   --negro-background: #2e2b2bfe;
   --blanco: #f5f5f5;
 }
+body{
+  overflow-x: hidden;
+}
 
 header {
   background-image: url("../../assets/headerAndFooter/backroundImgWebp.webp");
