@@ -1,3 +1,4 @@
+
 :root {
   --azul: #499af8;
   --morado: #601de9;
@@ -15,6 +16,8 @@ footer {
   width: 100vw;
   align-items: center;
   background-color: var(--negro-background);
+  position: absolute;
+
 }
 
 .footer_menu {
@@ -39,10 +42,16 @@ footer {
 .footer_menu li:hover {
   bottom: 0;
   left: 0;
-  background-color: #4372a81d;
   font-weight: bold;
   transition: width 0.3s ease-out;
+  text-shadow: rgb(38, 35, 35) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px,
+    rgb(255, 255, 255) 0px 0px 15px, rgb(255, 45, 149) 0px 0px 20px,
+    rgb(255, 45, 149) 0px 0px 30px, rgb(255, 45, 149) 0px 0px 40px,
+    rgb(255, 45, 149) 0px 0px 50px, rgb(255, 45, 149) 0px 0px 75px;
 }
+
+
+
 
 .footer_socialNetworks {
   grid-column: 5/7;
@@ -64,14 +73,17 @@ footer {
   margin: 0;
   padding: 15px 5px;
   font-size: 30px;
-  color: rgb(210, 203, 203);
+  color: var(--blanco);
 }
 
 .footer_socialNetworks i:hover {
-  font-size: 31px;
-  bottom: 0;
-  left: 0;
-  color: var(--cyan);
+  text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px,
+  rgb(255, 255, 255) 0px 0px 15px, rgb(255, 45, 149) 0px 0px 20px,
+  rgb(255, 45, 149) 0px 0px 30px, rgb(255, 45, 149) 0px 0px 40px,
+  rgb(255, 45, 149) 0px 0px 50px, rgb(255, 45, 149) 0px 0px 75px;
+--darkreader-inline-color: #e8e6e3;
+--darkreader-inline-bgcolor: #262a2b;
+-webkit-text-fill-color: black;
   transition: width 0.3s ease-out;
 }
 
@@ -94,7 +106,7 @@ footer {
   margin: 0;
   padding: 5px;
   font-size: 23.5px;
-  color: rgb(210, 203, 203);
+ color: var(--blanco);
 }
 
 /*todo el tema dew responsive*/
@@ -171,9 +183,31 @@ footer {
 }
 
 @media (max-width: 630px) {
+
+  .footer_socialNetworks i {
+    font-size: 20px;
+  }
+  .footer_pay i {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 550px) {
 }
 @media (max-width: 500px) {
+
+  .footer_socialNetworks p {
+    font-size: 12px;
+  }
+  .footer_socialNetworks i {
+
+    font-size: 15px;
+  }
+
+  .footer_pay p {
+    font-size: 12px;
+  }
+  .footer_pay i {
+    font-size: 15px;
+  }
 }
