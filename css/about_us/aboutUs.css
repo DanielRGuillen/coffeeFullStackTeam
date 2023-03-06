@@ -1,65 +1,70 @@
-:root {
-  --negro: #000000;
-  --deepblue: #0a3442;
-  --blue: #25bee8;
-  --cyan: #36c4c6;
-  --blanco: #efefef;
-  /* colores del logo */
-  --magenta: #bb0cd4;
-  --Azul: #4f91fb;
-  --morado: #7939fd;
-}
-*{
-  margin: 0;
-  padding: 0;
-}
 
 /* CONTENEDOR DEL PARRAFO Y NUESTRO PROYECTO */
 .ourProject {
-
   margin: 3rem 0;
   margin-bottom: 7rem;
   padding: 2rem 3rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
-
 }
 .container-L {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .container-L h4 {
-  color: #4f91fb;
-  text-shadow: #fefefe 1px 1px 2px;
-  font-weight: 500;
+  color: var(--blanco);
+  font-weight:bold;
   font-size: 2.5rem;
-  font-weight: 400;
   text-align: center;
-
 }
-.container-L h4:hover{
- 
+.container-L h4:hover {
   transform: translateY(-4px);
 }
 
-.logo {
+.logo-sec {
   margin: 1rem 0 0;
   width: 14rem;
   padding: 1.5rem;
   object-fit: cover;
   position: unset;
+  justify-content: center;
 }
 
-.logo:hover {
-  transform: translateX(10%);
+.logo-sec p {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--azul);
+  text-align: center;
+  margin: 0;
+}
+.on-sec {
+  font-weight: bold;
+  color: var(--rosado);
+}
+.tw-sec {
+  font-weight: bold;
+  color: var(--morado);
+}
+
+.logo-sec:hover {
+  color: var(--azul);
+  border-radius: 20px;
+  background: transparent;
+  filter: contrast(150%) saturate(150%) brightness(1.2);
+  text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px,
+    rgb(255, 255, 255) 0px 0px 15px, rgb(255, 45, 149) 0px 0px 20px,
+    rgb(255, 45, 149) 0px 0px 30px, rgb(255, 45, 149) 0px 0px 40px,
+    rgb(255, 45, 149) 0px 0px 50px, rgb(255, 45, 149) 0px 0px 75px;
+  --darkreader-inline-color: #e8e6e3;
+  --darkreader-inline-bgimage: initial;
+  --darkreader-inline-bgcolor: #262a2b;
 }
 
 .container-R {
-  color: var(--dos);
+  color: var(--blanco);
   margin: 0;
   width: 54vw;
   padding: 0 1.5rem;
@@ -68,18 +73,15 @@
   flex-direction: column;
   justify-content: space-evenly;
   border-radius: 10px;
-  border-top: 3px #7939fd solid;
-  border-left: 5px #bb0cd4 solid;
-  border-bottom: 3px #4f91fb solid;
-  border-right: 5px #bb0cd4 solid;
-
+  border-top: 3px var(--morado) solid;
+  border-left: 5px var(--rosado) solid;
+  border-bottom: 3px var(--azul) solid;
+  border-right: 5px var(--rosado) solid;
 }
 
 .container-R:hover {
-
-  transform: scale(.98);
+  transform: scale(0.98);
 }
-
 
 .descrip1 {
   height: 60%;
@@ -94,7 +96,6 @@
   font-weight: 600;
   color: #4f91fb;
 }
-
 
 .values {
   width: 100%;
@@ -117,12 +118,13 @@
   letter-spacing: 2px;
   text-transform: capitalize;
   border-radius: 9px;
-
 }
 
 .values ul li:hover {
   background-color: var(--dos);
-  color: #4f91fb;
+  text-shadow: rgb(255, 255, 255) 0px 0px 5px, #4f91fb 0px 0px 10px,
+    rgb(255, 255, 255) 0px 0px 15px, #4f91fb 0px 0px 20px, #4f91fb 0px 0px 30px,
+    #4f91fb 0px 0px 40px, #4f91fb 0px 0px 50px, #4f91fb 0px 0px 75px;
   font-weight: 700;
   transform: scale(0.9);
   transition: ease;
@@ -141,13 +143,16 @@
   margin-bottom: 5rem;
   display: flex;
   justify-content: center;
+  
 }
 .col {
   width: 500px;
 }
 .title__perfiles {
-  color: var(--cyan);
+  color: var(--blanco);
   text-align: center;
+  font-weight: bold;
+  
 }
 
 .title__perfiles h4 {
@@ -156,13 +161,19 @@
 
 .card {
   position: inherit;
-  background-color: var(--cyan);
   width: 300px;
   border-radius: 15px;
   margin: auto auto;
   margin-top: 5rem;
   opacity: 0.5;
   box-shadow: -10px 19px 14px -4px rgba(0, 0, 0, 0.92);
+  background: rgb(73, 154, 248);
+  background: linear-gradient(
+    90deg,
+    rgba(73, 154, 248, 0.44861694677871145) 29%,
+    rgba(96, 29, 233, 0.41780462184873945) 55%,
+    rgba(186, 11, 214, 0.43461134453781514) 80%
+  );
 }
 
 .card:hover {

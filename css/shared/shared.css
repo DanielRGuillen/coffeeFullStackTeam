@@ -32,10 +32,12 @@
 
 body {
   width: 100%;
-  background-color: var(--negro-background);
+  background-color: #2e2b2be7;
   margin: 0;
   padding: 0;
   color: var(--blanco);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  
 }
 
 
