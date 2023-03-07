@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../css/contact/contact.css">
+  <link rel="stylesheet" href="../../css/shared/">
   <link rel="import" href="./menu_bootstrap/navbar.html">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <title>Contacto</title>
@@ -35,11 +36,12 @@
           </div>
           <div>
             <label for="motivo">Motivo de solicitud</label>
-            <input type="text" name="motivo" id="motivoSolicitud" />
+            <input type="text" name="motivo" id="motivoSolicitud" 
+            placeholder="Ingresa el motivo de tu solicitud" required/>
           </div>
           <div class="oneColumn">
             <label for="">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresa tu mensaje..." required></textarea>
           </div>
           <div class="oneColumn">
             <button type="submit" id="button">Enviar</button>
