@@ -1,4 +1,3 @@
-
 /* CONTENEDOR DEL PARRAFO Y NUESTRO PROYECTO */
 .ourProject {
   margin: 3rem 0;
@@ -7,26 +6,27 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
+
 .container-L {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+
 }
 
 .container-L h4 {
   color: var(--blanco);
-  font-weight:bold;
-  font-size: 2.5rem;
+  font-weight: bold;
+  font-size: 2.7rem;
   text-align: center;
 }
+
 .container-L h4:hover {
   transform: translateY(-4px);
 }
 
 .logo-sec {
   margin: 1rem 0 0;
-  width: 14rem;
   padding: 1.5rem;
   object-fit: cover;
   position: unset;
@@ -41,10 +41,12 @@
   text-align: center;
   margin: 0;
 }
+
 .on-sec {
   font-weight: bold;
   color: var(--rosado);
 }
+
 .tw-sec {
   font-weight: bold;
   color: var(--morado);
@@ -96,6 +98,7 @@
   line-height: 2rem;
   text-align: left;
   margin: 1.4rem;
+  overflow: hidden;
   overflow-y: scroll;
 }
 
@@ -109,13 +112,6 @@
   margin: 0;
 }
 
-.values h5 {
-  font-weight: 400;
-  font-size: 1.35rem;
-  letter-spacing: 4px;
-  margin-bottom: 0.7rem;
-  text-align: left;
-}
 
 .values ul li {
   padding: 0.8rem;
@@ -144,16 +140,18 @@
   margin-bottom: 5rem;
   display: flex;
   justify-content: center;
-  
+
 }
+
 .col {
   width: 500px;
 }
+
 .title__perfiles {
   color: var(--blanco);
   text-align: center;
   font-weight: bold;
-  
+
 }
 
 .title__perfiles h4 {
@@ -169,12 +167,10 @@
   opacity: 0.5;
   box-shadow: -10px 19px 14px -4px rgba(0, 0, 0, 0.92);
   background: rgb(73, 154, 248);
-  background: linear-gradient(
-    90deg,
-    rgba(73, 154, 248, 0.44861694677871145) 29%,
-    rgba(96, 29, 233, 0.41780462184873945) 55%,
-    rgba(186, 11, 214, 0.43461134453781514) 80%
-  );
+  background: linear-gradient(90deg,
+      rgba(73, 154, 248, 0.44861694677871145) 29%,
+      rgba(96, 29, 233, 0.41780462184873945) 55%,
+      rgba(186, 11, 214, 0.43461134453781514) 80%);
 }
 
 .card:hover {
@@ -189,11 +185,13 @@
   margin: auto auto;
   filter: grayscale(100%);
 }
+
 .photoKaren,
 .photoLaura {
   height: 240px;
   object-fit: cover;
 }
+
 .perfiles img:hover {
   transition: all 400ms;
   border-radius: 50%;
@@ -201,39 +199,5 @@
   border: solid 4px white;
 }
 
-/* Responsive para que no se desborde el parrafo de descripcion proyecto y el header */
-@media screen and (max-width: 990px) {
-  .container-fluid {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .container-fluid p {
-    display: none;
-  }
-  .container-fluid a {
-    display: flex;
-  }
-  .title__text {
-    transition: all 200ms;
-    font-size: 2rem;
-    margin-right: -7rem;
-    margin-left: -3rem;
-    text-align: center;
-  }
 
-  .container__paragraph {
-    margin-bottom: 5rem;
-  }
-}
 
-/*todo responsive para navbar en table mobile */
-
-@media screen and (max-width: 768px) {
-  .ourProyect {
-    padding: 2rem;
-  }
-
-  .container__paragraph p {
-    padding: 1rem;
-  }
-}
