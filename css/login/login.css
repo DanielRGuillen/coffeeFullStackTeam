@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+header {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  animation: change-bg 20s ease-in-out infinite;
+}
+
+/* Transicion imagen de fondo */
+
+@keyframes change-bg {
+  0% {
+    background-image: url("../../assets/login/w1_11zon.webp");
+  }
+  25% {
+    background-image: url("../../assets/login/w2_11zon.webp");
+  }
+  50% {
+    background-image: url("../../assets/login/w3_11zon.webp");
+  }
+  100% {
+    background-image: url("../../assets/login/w4_11zon.webp");
+  }
+}
+
+/*logo*/
+.logo {
+  text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px,
+    rgb(255, 255, 255) 0px 0px 15px, rgb(255, 45, 149) 0px 0px 20px,
+    rgb(255, 45, 149) 0px 0px 30px, rgb(255, 45, 149) 0px 0px 40px,
+    rgb(255, 45, 149) 0px 0px 50px, rgb(255, 45, 149) 0px 0px 75px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--blanco);
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+}
+.info {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--blanco);
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  -webkit-text-stroke: 1px black;
+}
+.in {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--azul);
+}
+
+.on {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--rosado);
+}
+.tw {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--morado);
+}
+
+.container-form {
+  /* width: 90%; */
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.5s ease-out;
+}
+
+.welcome-back {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.message {
+  padding: 1rem;
+}
+
+.message h2 {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+
+.message button {
+  padding: 1rem;
+  font-weight: 400;
+  background-color: var(--morado);
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in;
+  color: #fff;
+}
+
+.message button:hover {
+  background-color: var(--azul);
+}
+
+::placeholder {
+  color: white;
+}
+
+.formulario {
+  width: 90%; /*no existia lo agregue extra */
+  max-width: 400px; /*cambio puse max */
+  padding: 1rem;
+  margin: 2rem;
+  background-color: rgb(51, 51, 51, 0.602);
+  text-align: center;
+  border-radius: 50px;
+}
+
+.create-account {
+  padding: 2.7rem 0;
+  font-size: 1.7rem;
+}
+
+.iconos {
+  width: 230px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.border-icon {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: solid thin white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in;
+}
+
+.border-icon:hover {
+  background-color: #4a4aee;
+  cursor: pointer;
+}
+
+.cuenta-gratis {
+  padding: 2rem 0;
+}
+
+.formulario input {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: white thin solid;
+  text-align: center;
+  outline: none;
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.formulario input[type="button"] {
+  width: 60%;
+  margin: auto;
+  border: solid thin white;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  background-color: white;
+  font-weight: 600;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #222;
+}
+
+.sign-in {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sign-in.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sign-up.active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*responsive dispositivos mobiles y PC*/
+@media screen and (max-width: 1000px) {
+  .container-form {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .formulario {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container-form {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .formulario {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .container-form {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .formulario {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
