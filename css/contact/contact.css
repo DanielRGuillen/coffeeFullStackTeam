@@ -207,3 +207,30 @@ label {
     padding: 0.5em;
   }
 }
+/* Responsive pantallas < 480px */
+@media (max-width: 480px) {
+  .contact__form form {
+    display: block;
+  }
+  .contact__form form .oneColumn {
+    grid-column: initial; /* Reinicia la propiedad grid-column */
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+  .contact__info {
+    font-size: 0.8rem;
+  }
+  
+  .contact__info h4,
+  .contact__info ul,
+  .contact__info p {
+    margin: 1rem auto;
+  }
+  
+  .contact__info ul li {
+    padding: 0.2em;
+  }
+  .contact__info p{
+    font-size: 0.9rem;
+    word-wrap: break-word;  
+  }
+}
