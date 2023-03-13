@@ -17,6 +17,7 @@ header {
   flex-direction: column;
   position: relative;
   animation: change-bg 20s ease-in-out infinite;
+  
 }
 
 /* Transicion imagen de fondo */
@@ -24,15 +25,24 @@ header {
 @keyframes change-bg {
   0% {
     background-image: url("../../assets/login/w1_11zon.webp");
+    opacity: 0.7;
   }
   25% {
     background-image: url("../../assets/login/w2_11zon.webp");
+    opacity: 0.7;
   }
   50% {
     background-image: url("../../assets/login/w3_11zon.webp");
+    opacity: 0.7;
   }
-  100% {
+  75% {
     background-image: url("../../assets/login/w4_11zon.webp");
+    opacity: 0.7;
+  }
+
+  100% {
+    background-image: url("../../assets/login/w1_11zon.webp");
+    opacity: 0.7;
   }
 }
 
@@ -60,6 +70,7 @@ p {
   margin: 0;
   padding: 5px;
   -webkit-text-stroke: 1px black;
+  background-color: #22222223;
 }
 .in {
   font-weight: bold;
@@ -128,7 +139,7 @@ p {
   max-width: 400px; /*cambio puse max */
   padding: 1rem;
   margin: 2rem;
-  background-color: rgb(51, 51, 51, 0.602);
+  background-color: rgba(51, 51, 51, 0.792);
   text-align: center;
   border-radius: 50px;
 }
