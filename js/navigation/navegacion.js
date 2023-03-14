@@ -27,3 +27,9 @@ function navbarProducts() {
   });
 }
 
+function footerTerms() {
+  $(function () {
+    $("#padre").load("../../html/terminos_condiciones/terminos_condiciones.html");
+  });
+}
+
