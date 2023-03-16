@@ -27,29 +27,38 @@
     </div>
      
     <!--todo INICIA FORMULARIO LOGIN - REGISTRO -->
-    <form class="formulario">
+    <form role="form" onsubmit="signUp(event);" class="formulario" id="formulario">
         <h2 class="create-account">Crear una cuenta</h2>
-        <div class="iconos">
-            <div class="border-icon">
-                <i class='bx bxl-google'></i>
-            </div>
-            <div class="border-icon">
-                <i class='bx bxl-instagram'></i>
-            </div>
-            <div class="border-icon">
-                <i class='bx bxl-linkedin' ></i>
-            </div>
-            <div class="border-icon">
-                <i class='bx bxl-facebook-circle' ></i>
-            </div>
-        </div>
         <p class="cuenta-gratis">Crear una cuenta gratis</p>
-        <input type="text" placeholder="Escribe tu nombre y apellido..." required>
-        <input type="email" id="email"placeholder="Ingresa tu correo electrónico" required>
-        <input type="password" id="password" placeholder="Ingresa tu Contraseña" required>
-        <input type="button" value="Registrarse" onclick="validarPassword()">
+
+        <div id="grupo__u">
+            <input name="nameU" type="text" id="nameU" placeholder="Nombre" required>
+            <p id="alert1" style="font-size: 10px"> </p>
+        </div>
+
+        <div id="grupo__u">
+            <input name="lastName" type="text" id="lastName" placeholder="Apellido" required>
+            <p id="alert2" style="font-size: 10px"></p>
+        </div>
+
+        <div id="grupo__u">
+            <input name="phone" type="tel" id="phone" placeholder="Número de contacto" required>
+            <p id="alert3" style="font-size: 10px"></p>
+        </div>
+
+        <div id="grupo__u">
+            <input name="email" type="email" id="email" placeholder="Ingresa tu correo electrónico" required>
+            <p id="alert4" style="font-size: 10px"></p>
+        </div>
+
+        <div id="grupo__u">
+            <input name="password" type="password" id="password" placeholder="Ingresa tu contraseña" required>
+            <p id="alert5" style="font-size: 10px" style="margin: 0px;"></p>
+        </div>
+        <button type="submit">Registrarse</button>
     </form>
 </div>
+
 <div class="container-form sign-in">
     <form class="formulario">
         <h2 class="create-account">Iniciar Sesion</h2>
@@ -61,24 +70,26 @@
                 <i class='bx bxl-instagram'></i>
             </div>
             <div class="border-icon">
-                <i class='bx bxl-linkedin' ></i>
+                <i class='bx bxl-linkedin'></i>
             </div>
             <div class="border-icon">
-                <i class='bx bxl-facebook-circle' ></i>
+                <i class='bx bxl-facebook-circle'></i>
             </div>
         </div>
         <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
-        <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico" required />
-        <input type="password" placeholder="Ingresa tu Contraseña" required>
-        <input type="button" value="Iniciar Sesion">
+
+        <input type="email" name="email" id="emailIn" placeholder="Ingresa tu correo electrónico" required />
+        <input type="password" id="passwordIn" placeholder="Ingresa tu Contraseña" required>
+        <button type="button" onclick="signIn(event)" value="Ingresar"> Ingresar</button>
+
+
+
     </form>
     <div class="welcome-back">
         <div class="message">
-            <p class="logo"><span class="in">Audifonos</span> <span class="on">Colombia</span
-                ><span class="tw">.co</span>
-              </p>
+            <h2>Bienvenido de nuevo</h2>
             <p class="info">Si aun no tienes una cuenta por favor registrese aqui</p>
-            <button class="sign-in-btn">Registrarse</button>
+            <button class="sign-in-btn">Ingresar</button>
         </div>
     </div>
 </div>
