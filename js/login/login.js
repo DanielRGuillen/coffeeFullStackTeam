@@ -23,7 +23,7 @@ const expresiones = {
     lastName: /^[a-zA-ZÀ-ÿ\s]{3,40}$/,
     phone: /^[0-9]{10}$/, // recibe 10 digitus numericos
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    password: /^.{6,12}$ + [\W_]/, // 6 a 12 digitos, caracter especial .
+    password: /^.{6,12}$[\W_]/, // 6 a 12 digitos, caracter especial .
 
 }
 function validarPassword() {
@@ -34,7 +34,7 @@ function validarPassword() {
         alert("La contraseña debe tener al menos 8 caracteres");
     } else if (!numero.test(password)) {
         alert("La contraseña debe contener al menos un número");
-    } else (!caracterEspecial.test(password)) 
+    } else if (!caracterEspecial.test(password)) 
         alert("La contraseña debe contener al menos un carácter especial");
     
 }
