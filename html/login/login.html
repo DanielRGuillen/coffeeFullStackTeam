@@ -29,8 +29,6 @@
     <!--todo INICIA FORMULARIO LOGIN - REGISTRO -->
     <form role="form" onsubmit="signUp(event);" class="formulario" id="formulario">
         <h2 class="create-account">Crear una cuenta</h2>
-        <p class="cuenta-gratis">Crear una cuenta gratis</p>
-
         <div id="grupo__u">
             <input name="nameU" type="text" id="nameU" placeholder="Nombre" required>
             <p id="alert1" style="font-size: 10px"> </p>
@@ -51,11 +49,13 @@
             <p id="alert4" style="font-size: 10px"></p>
         </div>
 
-        <div id="grupo__u">
+        <div  id="grupo__u">
             <input name="password" type="password" id="password" placeholder="Ingresa tu contraseña" required>
             <p id="alert5" style="font-size: 10px" style="margin: 0px;"></p>
         </div>
+        <div class="register">
         <button type="submit">Registrarse</button>
+        </div>
     </form>
 </div>
 
@@ -78,10 +78,11 @@
         </div>
         <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
 
+        <div class="message">
         <input type="email" name="email" id="emailIn" placeholder="Ingresa tu correo electrónico" required />
         <input type="password" id="passwordIn" placeholder="Ingresa tu Contraseña" required>
-        <button type="button" onclick="signIn(event)" value="Ingresar"> Ingresar</button>
-
+        <button type="button" onclick="signIn(event)" value="Ingresar">Iniciar Sesion</button>
+        </div>
 
 
     </form>
@@ -89,7 +90,7 @@
         <div class="message">
             <h2>Bienvenido de nuevo</h2>
             <p class="info">Si aun no tienes una cuenta por favor registrese aqui</p>
-            <button class="sign-in-btn">Ingresar</button>
+            <button class="sign-in-btn">Registrarse</button>
         </div>
     </div>
 </div>
