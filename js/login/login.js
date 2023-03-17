@@ -159,7 +159,8 @@ function signIn(e) {
     if (!exist) {
         alert("Los datos son incorrectos o no se encuentran registrados");
     }else {
-        alert("Bienvenido");
+        alert("Bienvenido, serás redigirido a nuestro inicio");
+        window.location.href = '../../html/index/index.html';
     }
 
 
