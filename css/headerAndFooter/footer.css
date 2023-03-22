@@ -37,6 +37,7 @@ footer {
   font-weight: bold;
   font-size: 15px;
   text-decoration: none;
+
 }
 
 .footer_menu li:hover {
@@ -187,13 +188,17 @@ footer {
   .footer_socialNetworks i {
     font-size: 20px;
   }
+  .footer_socialNetworks i:hover {
+    font-size: 21px;
+  }
+
+
   .footer_pay i {
     font-size: 20px;
   }
 }
 
-@media (max-width: 550px) {
-}
+
 @media (max-width: 500px) {
 
   .footer_socialNetworks p {
@@ -203,6 +208,11 @@ footer {
 
     font-size: 15px;
   }
+
+  .footer_socialNetworks i:hover {
+    font-size: 13px;
+  }
+
 
   .footer_pay p {
     font-size: 12px;

@@ -33,3 +33,8 @@ function footerTerms() {
   });
 }
 
+function footeriTerms() {
+  $(function () {
+    $("#padre").load("../../html/terminos_condiciones/privacidad.html");
+  });
+}
