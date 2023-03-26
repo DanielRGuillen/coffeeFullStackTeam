@@ -110,24 +110,32 @@ const signUp = e =>{
     let password = document.getElementById('password').value;
 
     let dataUser = JSON.parse(localStorage.getItem('dataUser')) || [];
+    
+    let emailList = dataUser.map(data => data.email);
 
+    let exist = emailList.includes(email);
 
     // validación de datos, existen o no existen en local storage
 
-    let exist = dataUser.length && JSON.parse(localStorage.getItem('dataUser')).some (data =>
+    let existInStorage = dataUser.length && JSON.parse(localStorage.getItem('dataUser')).some (data =>
         data.nameU.toLowerCase() == nameU.toLowerCase() &&
         data.lastName.toLowerCase() == lastName.toLowerCase() &&
         data.email == email);
 
-    if (!exist) {
+    if (!existInStorage) {
+        if(!exist){
 
-        dataUser.push({ nameU, lastName, phone, email, password });
+            dataUser.push({ nameU, lastName, phone, email, password });
+    
+            localStorage.setItem('dataUser', JSON.stringify(dataUser));
+    
+            document.querySelector('#formulario').reset();
+    
+            alert("Registro exitoso");
+        }else{
+            alert("El email ya se encuentra registrado");
+        }
 
-        localStorage.setItem('dataUser', JSON.stringify(dataUser));
-
-        document.querySelector('#formulario').reset();
-
-        alert("Registro exitoso");
 
         
     }
