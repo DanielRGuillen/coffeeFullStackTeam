@@ -16,7 +16,7 @@ header {
   position: relative;
   animation: change-bg 20s ease-in-out infinite;
   overflow: hidden;
-  
+
 }
 
 /* Transicion imagen de fondo */
@@ -69,7 +69,7 @@ p {
   margin: 0;
   padding: 5px;
   -webkit-text-stroke: .5px black;
-  
+
 }
 .in {
   font-weight: bold;
@@ -126,7 +126,7 @@ p {
 }
 
 .message button:hover {
-  background-color: var(--azul);  
+  background-color: var(--azul);
 }
 
 .register {
@@ -143,7 +143,7 @@ p {
   outline: none;
   cursor: pointer;
   font-size: 0.9rem;
-  
+
   transition: all 0.3s ease-in;
   color: #fff;
 }
@@ -153,9 +153,9 @@ p {
 }
 
 .formulario {
-  width: 90%; 
-  height: 80%;
-  max-width: 400px; 
+  width: 90%;
+  height: 70%;
+  max-width: 400px;
   padding: 1rem;
   margin: 2rem;
   background-color: rgba(51, 51, 51, 0.792);
@@ -243,33 +243,51 @@ p {
 }
 
 /*responsive dispositivos mobiles y PC*/
+@media screen and (max-width: 1366px) {
+  .container-form {
+    align-items: center;
+    height: 65%;
+  }
+
+  .formulario {
+    margin: auto;
+    height: 100%;
+    margin: 10px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .container-form {
-    flex-direction: column;
     align-items: center;
-    height: 100%;
-  }
-
-  .formulario {
-    margin: auto;
     height: 70%;
-    
-  }
-}
-@media screen and (max-width: 720px) {
-  .container-form {
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
   }
 
   .formulario {
     margin: auto;
-  
+    height: 95%;
+    margin: 10px;
+
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
+  .container-form {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .formulario {
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+  }
+  .register button{
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .container-form {
     flex-direction: column;
     align-items: center;
@@ -278,29 +296,25 @@ p {
 
   .formulario {
     flex-direction: column;
-    margin-bottom: 20px;
     margin: auto;
     height: auto;
   }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 414px) {
   .container-form {
     flex-direction: column;
     align-items: center;
     height: 100%;
-   
+
   }
 
   .formulario {
     flex-direction: column;
-    margin-bottom: 20px;
     margin: auto;
-    padding: 0;
+    height: 65%;
   }
   .register button{
-    margin: 0; 
-         
+    margin: 0;
   }
-  
 }
