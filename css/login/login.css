@@ -243,15 +243,28 @@ p {
 }
 
 /*responsive dispositivos mobiles y PC*/
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1990px) {
   .container-form {
     align-items: center;
-    height: 65%;
+    height: 100%;
   }
 
   .formulario {
     margin: auto;
+    height: auto;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .container-form {
+    align-items: center;
     height: 100%;
+  }
+
+  .formulario {
+    margin: auto;
+    height: auto;
     margin: 10px;
   }
 }
@@ -259,12 +272,12 @@ p {
 @media screen and (max-width: 1024px) {
   .container-form {
     align-items: center;
-    height: 70%;
+    height: 100%;
   }
 
   .formulario {
     margin: auto;
-    height: 95%;
+    height: auto;
     margin: 10px;
 
   }
@@ -275,15 +288,16 @@ p {
     flex-direction: column;
     align-items: center;
     height: auto;
+    width: 100%;
   }
 
   .formulario {
     flex-direction: column;
-    margin: auto;
+    margin: 10px;
     height: auto;
   }
   .register button{
-    margin: 2rem;
+    margin: 1rem;
   }
 }
 
@@ -312,9 +326,9 @@ p {
   .formulario {
     flex-direction: column;
     margin: auto;
-    height: 65%;
+    height: 70%;
   }
   .register button{
-    margin: 0;
+    margin: auto;
   }
 }
