@@ -234,3 +234,22 @@ label {
     word-wrap: break-word;  
   }
 }
+/* Responsive pantallas < 768px */
+@media (max-width: 768px){
+  .contact__form label{
+    font-size: 0.8rem;
+  }
+  .contact__form button{
+    font-size: 0.8rem;
+  }
+  .contact__info {
+    font-size: 0.8rem;
+  }
+  .contact__info h4{
+    font-size: 1.1rem;
+  }
+  .contact__info p{
+    font-size: 0.9rem;
+  }
+
+}
