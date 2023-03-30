@@ -1,7 +1,7 @@
 /* CONTENEDOR DEL PARRAFO Y NUESTRO PROYECTO */
 .ourProject {
   margin: 3rem 0;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
   padding: 2rem 3rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -57,7 +57,9 @@
   from {
     opacity: 1;
   }
-  to {color: var(--azul);
+
+  to {
+    color: var(--azul);
     border-radius: 20px;
     background: transparent;
     filter: contrast(150%) saturate(150%) brightness(1.2);
@@ -67,7 +69,8 @@
       rgb(255, 45, 149) 0px 0px 50px, rgb(255, 45, 149) 0px 0px 75px;
     --darkreader-inline-color: #e8e6e3;
     --darkreader-inline-bgimage: initial;
-    --darkreader-inline-bgcolor: #262a2b;}
+    --darkreader-inline-bgcolor: #262a2b;
+  }
 }
 
 
@@ -122,7 +125,7 @@
   border-radius: 9px;
   font-weight: bold;
   color: var(--azul);
-  text-shadow: rgba(255, 255, 255, 0.621) 0px 0px 5px;
+  text-shadow: rgba(255, 255, 255, 0.496) 0px 0px 10px;
 }
 
 
@@ -134,9 +137,13 @@
   margin: 4rem auto;
   grid-column: 1/-1;
 }
+.partners img{
+width: 13vw;
+}
+
 
 /* perfiles */
-.container__cards {
+/* .container__cards {
   margin-bottom: 5rem;
   display: flex;
   justify-content: center;
@@ -156,30 +163,33 @@
 
 .title__perfiles h4 {
   font-size: 3rem;
-}
+} */
 
-.card {
+/* .card {
   position: inherit;
   width: 300px;
   border-radius: 15px;
+  border: 4px red solid;
   margin: auto auto;
+  padding: 1rem;
   margin-top: 5rem;
   opacity: 0.5;
-  box-shadow: -10px 19px 14px -4px rgba(0, 0, 0, 0.92);
+  background-image: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
+  /* box-shadow: -10px 19px 14px -4px rgba(0, 0, 0, 0.92);
   background: rgb(73, 154, 248);
   background: linear-gradient(90deg,
       rgba(73, 154, 248, 0.44861694677871145) 29%,
       rgba(96, 29, 233, 0.41780462184873945) 55%,
-      rgba(186, 11, 214, 0.43461134453781514) 80%);
-}
+      rgba(186, 11, 214, 0.43461134453781514) 80%);} */
 
-.card:hover {
+
+/* .card:hover {
   transition: all 400ms;
   opacity: 1;
-}
+} */
 
 /* Ajuste tamaño fotos */
-.perfiles img {
+/* .perfiles img {
   width: 15rem;
   border-radius: 15px;
   margin: auto auto;
@@ -197,7 +207,4 @@
   border-radius: 50%;
   filter: grayscale(0);
   border: solid 4px white;
-}
-
-
-
+}*/
