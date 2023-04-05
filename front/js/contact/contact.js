@@ -40,7 +40,7 @@ function validacionEmail(correoElectronico){
      */
     }
     if(!emailValido(correoElectronico)){
-      alert('Ingresa un email válidosssss');
+      alert('Ingresa un email válido');
       document.getElementById('email').focus();
       return false;
     }

@@ -45,6 +45,20 @@ header {
   }
 }
 
+/* icon home */
+
+.icon_home{
+  font-size: 1.5rem;
+  position: absolute; 
+  top: 16px;
+  left: 20px; 
+  color: white; 
+}
+.icon_home:hover{
+  color: #4f9bf5;
+}
+
+
 /*logo*/
 .logo {
   text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px,
