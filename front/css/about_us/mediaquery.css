@@ -71,7 +71,7 @@
 @media screen and (max-width: 768px) {
     .ourProject {
         width: 93vw;
-        padding: 1rem;
+        padding-top: 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -79,7 +79,7 @@
     }
 
     .container-L h4 {
-        font-size: 2.5rem;
+        font-size: 40px;
     }
 
     .logo-sec {
@@ -90,25 +90,24 @@
     }
 
     .logo-sec img {
-        width: 15rem;
+        width: 10rem;
         margin: 1rem auto;
     }
 
     .logo-sec p {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 
     .container-R {
         width: 83vw;
-        padding: 1rem;
-        margin: 2rem;
+        margin: 1rem;
     }
 
     .descrip1 {
-        font-size: 1.5rem;
+        font-size: 18px;
         margin: 1rem;
         padding: 2px;
-        height: 40vh;
+        height: 30vh;
         font-weight: 400px;
         text-align: center;
     }
@@ -121,13 +120,16 @@
     }
 
     .values ul li:hover {
-        text-shadow: rgb(255, 255, 255) 0px 0px 5px, #4f91fb 0px 0px 10px,
+        font-weight: bold;
+        text-shadow: rgba(255, 255, 255, 0.688) 0px 0px 5px, #4f91fb 0px 0px 10px,
             rgb(255, 255, 255) 0px 0px 15px, #4f91fb 0px 0px 20px, #4f91fb 0px 0px 10px,
             #4f91fb 0px 0px 20px, #4f91fb 0px 0px 10px, #4f91fb 0px 0px 15px;
-        font-weight: 500;
         transition: ease;
     }
 
+    .team_description_tittle h4{
+        font-size: 2.5rem;
+      }
 
     .partners {
         width: 90vw;
@@ -146,19 +148,19 @@
     .card {
         margin-right: 0;
         margin-bottom: 2rem;
-        width: 40vw;
+        width: 38vw;
+        height: 35vh;
     }
 
 }
 
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 600px) {
     .ourProject {
         width: 90vw;
-        padding: 1.2rem;
     }
 
     .container-L h4 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .logo-sec {
@@ -170,106 +172,67 @@
 
     .logo-sec img {
         margin: 1rem auto;
+        width: 9rem;
     }
 
     .logo-sec p {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .container-R {
         width: 83vw;
         padding: 1rem;
-        margin: 2rem;
+        margin: 0.5rem;
     }
 
     .descrip1 {
-        font-size: 1.5rem;
-        margin: 1rem;
-        height: 40vh;
+        font-size: 1rem;
+        height: 30vh;
         font-weight: 400px;
         text-align: center;
     }
 
 
     .values ul li {
-        padding: 1rem;
-        font-size: 1.4rem;
-        letter-spacing: 3px;
+        padding: 0.5rem;
+        font-size: 1rem;
+        letter-spacing: 2px;
     }
 
-    .values ul li:hover {
-        text-shadow: rgb(255, 255, 255) 0px 0px 5px, #4f91fb 0px 0px 10px,
-            rgb(255, 255, 255) 0px 0px 15px, #4f91fb 0px 0px 20px, #4f91fb 0px 0px 10px,
-            #4f91fb 0px 0px 20px, #4f91fb 0px 0px 10px, #4f91fb 0px 0px 15px;
-        font-weight: 500;
-        transition: ease;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-    .ourProject {
-        width: 90vw;
-        padding: 1.2rem;
-
-    }
-
-    .container-L h4 {
-        font-size: 2.5rem;
-    }
-
-    .logo-sec {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-    }
-
-    .logo-sec img {
-        width: 14rem;
-        margin: 1rem auto;
-    }
-
-    .logo-sec p {
-        font-size: 1.4rem;
-    }
-
-    .container-R {
+    .partners {
         width: 80vw;
-        padding: 1rem;
-        margin: 2rem;
+        margin: 1rem;
     }
 
-    .descrip1 {
-        font-size: 1.1rem;
-        margin: 10px;
-        height: 50vh;
-        font-weight: 400px;
-        text-align: center;
-    }
-
-
-    .values ul li {
-        padding: 0.8rem;
-        display: block;
-        font-size: 1.1rem;
-        letter-spacing: 3px;
-    }
-
-    .team_cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .team_cards{
+        margin: 0;
+        padding: 10px;
     }
 
     .card {
-        width: 75vw;
-    }
+        width: 15rem;
+        height: 17.7rem;
+      }
 
+      .card img {
+        width: 8rem;
+        height: 8rem;
+        margin: 15px, 30px;
+      }
+      
+      .card_p_name {
+        font-size: 1.2rem;
+        margin: 8px 10px;
+      }
+
+      .card_p_job {
+        font-size: 10px;
+        margin-bottom: 0.5rem;
+      }
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 
 
     .container-L h4 {
@@ -278,8 +241,8 @@
 
 
     .logo-sec img {
-        width: 10rem;
         margin: 1rem auto;
+        width: 7rem;
     }
 
     .logo-sec p {
@@ -288,20 +251,142 @@
 
 
     .descrip1 {
-        font-size: 1rem;
-        margin: 11px 0 1rem;
-        height: 52vh;
-        padding: 4px;
-        scrollbar-width: 1px;
+        font-size: 0.8rem;
+        height: 28vh;
     }
 
 
     .values ul li {
-        padding: 0.8rem;
-        display: block;
-        font-size: 1rem;
-        letter-spacing: 3px;
+        padding: 0.1rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.8px;
     }
 
+
+    .team_cards{
+        margin: 0;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .top{
+        padding: 0;
+        align-items: center;
+    }
+    .card {
+        width: 10rem;
+        height: 14.7rem;
+        align-items: center;
+      }
+
+      .card img {
+        width: 6rem;
+        height: 6rem;
+        margin: 12px, 25px;
+      }
+      
+      .card_p_name {
+        font-size: 1rem;
+        margin: 6px 7px;
+      }
+
+      .card_p_job {
+        font-size: 7px;
+        margin-bottom: 0.3rem;
+      }
+
+      .card .content p{
+        font-size: 9px;
+      }
+
+      .content p {
+        height: 7rem;
+
+      }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .container-L h4 {
+        font-size: 1.5rem;
+    }
+
+
+    .logo-sec img {
+        margin: 1rem auto;
+        width: 5rem;
+    }
+
+    .logo-sec p {
+        font-size: 1rem;
+    }
+
+    .container-R {
+        width: 90vw;
+      
+      }
+      
+    .descrip1 {
+        font-size: 0.7rem;
+        height: 25vh;
+        
+    }
+    
+
+    .values ul li {
+        padding: 0.05rem;
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
+    }
+
+    .team_description_tittle h4{
+        font-size: 1.5rem;
+      }
+
+    .team_cards{
+        padding: 10px;
+    }
+
+
+    .card {
+        width: 8rem;
+        height: 12.7rem;
+      }
+
+      .card img {
+        width: 5rem;
+        height: 5rem;
+        margin: 8px, 8px;
+      }
+      
+      .card_p_name {
+        font-size: 0.8rem;
+        margin: 4px 5px;
+      }
+
+      .card_p_job {
+        font-size: 6px;
+        margin-bottom: 0.3rem;
+      }
+
+
+      .card_p_job span{
+        font-size: 10px;
+      }
+      
+      .card .content p{
+        font-size: 8px;
+      }
+
+      .content p {
+        height: 7rem;
+
+      }
+
+      .team_redes i {
+        font-size: 1.2rem;
+      
+      }
 
 }

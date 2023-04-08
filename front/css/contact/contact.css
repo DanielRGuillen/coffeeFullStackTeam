@@ -5,6 +5,11 @@
   --negro-background: #2e2b2bfe;
   --blanco: #f5f5f5;
 }
+
+::placeholder {
+  font-size: 12px;
+  color: #f5f5f54a;
+}
 /*! Form CONTACTO */
 
 .container {
@@ -167,7 +172,7 @@ label {
 .namepag:hover {
   transform: translateY(5px);
   transition: 0.5s ease ease-out;
-  color: #bb2b6b;
+  color: var(--azul);
 }
 .contact__info ul {
   list-style: none;
@@ -177,7 +182,7 @@ label {
   padding: 0.3em;
 }
 .contact__info ul i {
-  color: #bb2b6b;
+  color:var(--blanco);
   font-size: 1.4rem;
 }
 .contact__info ul i:active {
@@ -207,17 +212,76 @@ label {
     padding: 0.5em;
   }
 }
+
+/* Responsive pantallas < 768px */
+@media (max-width: 768px){
+  .contact__form label{
+    font-size: 0.8rem;
+  }
+  .contact__form button{
+    font-size: 0.8rem;
+  }
+  .contact__info {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .contact__info h4{
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  .contact__info p{
+    font-size: 0.9rem;
+    margin: 5px;
+  }
+  p.namepag{
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+}
+
+@media (max-width: 600px){
+
+  ::placeholder {
+    font-size: 10px;
+  }
+
+ 
+  .contact__info {
+    font-size: 12px;
+  }
+  .contact__info ul i {
+    font-size: 15px;
+  }
+
+  .contact__info p{
+    font-size: 11px;
+    margin: 5px;
+  }
+  p.namepag{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+}
+
+
 /* Responsive pantallas < 480px */
 @media (max-width: 480px) {
+
+  .container {
+    padding: 1.2rem 1.5rem;
+  }
   .contact__form form {
     display: block;
   }
+
   .contact__form form .oneColumn {
     grid-column: initial; /* Reinicia la propiedad grid-column */
     width: 100%; /* Ocupa todo el ancho disponible */
   }
   .contact__info {
-    font-size: 0.8rem;
+    font-size: 10px;
   }
   
   .contact__info h4,
@@ -230,26 +294,32 @@ label {
     padding: 0.2em;
   }
   .contact__info p{
-    font-size: 0.9rem;
+    font-size: 10px;
     word-wrap: break-word;  
   }
-}
-/* Responsive pantallas < 768px */
-@media (max-width: 768px){
-  .contact__form label{
-    font-size: 0.8rem;
+  p.namepag{
+    font-size: 13px;
+
   }
-  .contact__form button{
-    font-size: 0.8rem;
+}
+
+@media (max-width: 320px){
+
+  .contact__info h4{
+    font-size: 13px;
   }
   .contact__info {
-    font-size: 0.8rem;
+    font-size: 10px;
   }
-  .contact__info h4{
-    font-size: 1.1rem;
-  }
-  .contact__info p{
-    font-size: 0.9rem;
+  .contact__info ul i {
+    font-size: 12px;
   }
 
+  .contact__info p{
+    font-size: 9px;
+  }
+  p.namepag{
+    font-size: 12px;
+    margin-top: 8px;
+  }
 }
