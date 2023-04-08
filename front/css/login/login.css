@@ -16,7 +16,6 @@ header {
   position: relative;
   animation: change-bg 20s ease-in-out infinite;
   overflow: hidden;
-
 }
 
 /* Transicion imagen de fondo */
@@ -47,17 +46,16 @@ header {
 
 /* icon home */
 
-.icon_home{
+.icon_home {
   font-size: 1.5rem;
-  position: absolute; 
+  position: absolute;
   top: 16px;
-  left: 20px; 
-  color: white; 
+  left: 20px;
+  color: white;
 }
-.icon_home:hover{
+.icon_home:hover {
   color: #4f9bf5;
 }
-
 
 /*logo*/
 .logo {
@@ -82,8 +80,7 @@ p {
   text-align: center;
   margin: 0;
   padding: 5px;
-  -webkit-text-stroke: .5px black;
-
+  -webkit-text-stroke: 0.5px black;
 }
 .in {
   font-weight: bold;
@@ -145,10 +142,10 @@ p {
 
 .register {
   padding: 0;
-  margin: 0 ;
+  margin: 0;
 }
 
-.register button{
+.register button {
   padding: 1rem;
   font-weight: 400;
   background-color: var(--morado);
@@ -293,7 +290,6 @@ p {
     margin: auto;
     height: auto;
     margin: 10px;
-
   }
 }
 
@@ -310,12 +306,48 @@ p {
     margin: 10px;
     height: auto;
   }
-  .register button{
+  .register button {
     margin: 1rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+  p {
+    font-size: 18px;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+
+  .in {
+    font-size: 25px;
+  }
+
+  .on {
+    font-size: 25px;
+  }
+  .tw {
+    font-size: 25px;
+  }
+
+.message{
+  margin-top: 18px;
+}
+
+.message h2{
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+.message .info{
+  font-size: 18px;
+}
+
+.message button{
+  margin-top: 20px;
+}
+
   .container-form {
     flex-direction: column;
     align-items: center;
@@ -326,15 +358,46 @@ p {
     flex-direction: column;
     margin: auto;
     height: auto;
+    margin: 50px;
   }
 }
 
 @media screen and (max-width: 414px) {
+  .icon_home {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .info {
+    font-size: 18px;
+  }
+
+  .in {
+    font-size: 20px;
+  }
+
+  .on {
+    font-size: 20px;
+  }
+  .tw {
+    font-size: 20px;
+  }
+
+.message{
+  margin-top: 15px;
+}
+
+.message button{
+  margin-top: 18px;
+}
+
   .container-form {
     flex-direction: column;
     align-items: center;
-    height: 100%;
-
+    height: 90%;
   }
 
   .formulario {
@@ -342,7 +405,97 @@ p {
     margin: auto;
     height: 70%;
   }
-  .register button{
+  .register button {
     margin: auto;
   }
+}
+
+
+@media screen and (max-width: 320px) {
+  .icon_home {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .info {
+    font-size: 10px;
+  }
+
+  .info p{
+    font-size: 8px;
+  }
+
+  .in {
+    font-size: 20px;
+  }
+
+  .on {
+    font-size: 20px;
+  }
+  .tw {
+    font-size: 20px;
+  }
+
+
+  .iconos {
+    width: 200px;
+  }
+  
+  .border-icon {
+    height: 15px;
+    width:15px;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+  }
+.message{
+  margin-top: 5px;
+}
+
+.message h2{
+  font-size: 1.2rem;
+}
+
+
+.message input{
+  font-size: 10px;
+}
+
+
+.message button{
+  margin-top: 12px;
+  font-size: 13px;
+
+}
+
+  .container-form {
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+  }
+
+  .formulario {
+    flex-direction: column;
+    height: 75%;
+  }
+
+  .create-account {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .cuenta-gratis {
+    padding: 0.2rem 0;
+  }
+  
+  .formulario input {
+    width: 70%;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+    padding: 2px;
+  }
+  
+
 }

@@ -221,3 +221,27 @@ footer {
     font-size: 15px;
   }
 }
+
+@media (max-width: 320px) {
+
+  .footer_socialNetworks p {
+    font-size: 10px;
+  }
+  .footer_socialNetworks i {
+
+    font-size: 15px;
+  }
+
+  .footer_socialNetworks i:hover {
+    font-size: 12px;
+  }
+
+
+  .footer_pay p {
+    font-size: 10px;
+  }
+  .footer_pay i {
+    padding: 3px;
+    font-size: 12px;
+  }
+}

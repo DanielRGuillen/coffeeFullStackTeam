@@ -85,10 +85,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   border-radius: 10px;
-  border-top: 3px var(--morado) solid;
-  border-left: 5px var(--rosado) solid;
-  border-bottom: 3px var(--azul) solid;
-  border-right: 5px var(--rosado) solid;
+
 }
 
 .container-R:hover {
@@ -105,6 +102,7 @@
   overflow-y: scroll;
 }
 
+
 .descrip1 span {
   font-weight: 600;
   color: var(--azul);
@@ -119,15 +117,14 @@
 .values ul li {
   padding: 0.8rem;
   display: inline-block;
-  text-align: left;
+  
   font-size: 21px;
   letter-spacing: 2px;
   border-radius: 9px;
   font-weight: bold;
   color: var(--azul);
-  text-shadow: rgba(255, 255, 255, 0.496) 0px 0px 10px;
+  
 }
-
 
 
 .partners {
@@ -140,71 +137,3 @@
 .partners img{
 width: 13vw;
 }
-
-
-/* perfiles */
-/* .container__cards {
-  margin-bottom: 5rem;
-  display: flex;
-  justify-content: center;
-
-}
-
-.col {
-  width: 500px;
-}
-
-.title__perfiles {
-  color: var(--blanco);
-  text-align: center;
-  font-weight: bold;
-
-}
-
-.title__perfiles h4 {
-  font-size: 3rem;
-} */
-
-/* .card {
-  position: inherit;
-  width: 300px;
-  border-radius: 15px;
-  border: 4px red solid;
-  margin: auto auto;
-  padding: 1rem;
-  margin-top: 5rem;
-  opacity: 0.5;
-  background-image: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
-  /* box-shadow: -10px 19px 14px -4px rgba(0, 0, 0, 0.92);
-  background: rgb(73, 154, 248);
-  background: linear-gradient(90deg,
-      rgba(73, 154, 248, 0.44861694677871145) 29%,
-      rgba(96, 29, 233, 0.41780462184873945) 55%,
-      rgba(186, 11, 214, 0.43461134453781514) 80%);} */
-
-
-/* .card:hover {
-  transition: all 400ms;
-  opacity: 1;
-} */
-
-/* Ajuste tamaño fotos */
-/* .perfiles img {
-  width: 15rem;
-  border-radius: 15px;
-  margin: auto auto;
-  filter: grayscale(100%);
-}
-
-.photoKaren,
-.photoLaura {
-  height: 240px;
-  object-fit: cover;
-}
-
-.perfiles img:hover {
-  transition: all 400ms;
-  border-radius: 50%;
-  filter: grayscale(0);
-  border: solid 4px white;
-}*/
