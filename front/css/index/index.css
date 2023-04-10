@@ -252,6 +252,11 @@
   .cardInf a:hover{
     font-size: 17px;
   }
+
+  .banner-video {
+    height: 350px;
+  }
+  
   
 }
 
@@ -280,6 +285,11 @@
   .cardInf a:hover{
     font-size: 12px;
   }
+
+  .banner-video {
+    height: 300px;
+  }
+  
 }
 
 @media (max-width: 600px) {
@@ -337,6 +347,10 @@
   .cardInf a:hover{
     font-size: 13px;
   }
+  .banner-video {
+    height: 250px;
+  }
+  
 }
 
 
@@ -383,6 +397,11 @@
 
   .cardInf a:hover{
     font-size: 11px;
+  }
+
+  
+  .banner-video {
+    height: 200px;
   }
 }
 
@@ -432,6 +451,9 @@
 
   .cardInf a:hover{
     font-size: 10px;
+  }
+  .banner-video {
+    height: 150px;
   }
 }
 
