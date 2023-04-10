@@ -38,3 +38,17 @@ function footeriTerms() {
     $("#padre").load("../../html/terminos_condiciones/privacidad.html");
   });
 }
+
+window.addEventListener("load", function() {
+  var menuBurger = document.getElementById("navcol-1");
+  var lastScrollTop = 0;
+
+  window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if(scrollTop > lastScrollTop){
+      // ocultar el menú hamburguesa al hacer scroll hacia abajo
+      menuBurger.classList.remove("show");
+    } 
+    lastScrollTop = scrollTop;
+  });
+});
