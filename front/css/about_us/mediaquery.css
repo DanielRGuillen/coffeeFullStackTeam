@@ -213,8 +213,8 @@
     }
 
     .card {
-        width: 15rem;
-        height: 17.7rem;
+        width: 42vw;
+        height: 35vh;
       }
 
       .card img {
@@ -272,8 +272,8 @@
     }
 
     .card {
-        width: 40vw;
-        height: 35vh;
+        width: 43vw;
+        height: 37vh;
         align-items: center;
       }
 
@@ -352,8 +352,8 @@
 
 
     .card {
-        width: 37vw;
-        height: 41vh;
+        width: 42vw;
+        height: 40vh;
       }
 
       .card img {
