@@ -37,13 +37,13 @@
     flex-direction: column;
     justify-content: center;
     margin: 20px;
+    padding: 10px;
   }
   
   .card {
     position: relative;
     width: 17rem;
     height: 25rem;
- 
     border: 1px rgba(251, 248, 248, 0.586) solid;
     box-shadow: 0px 9px 16px 11px #ffffff39;
     border-radius: 10px;
@@ -97,6 +97,7 @@
     width: 13rem;
     color: #e7db57;
     margin: 10px 00;
+   
   }
   
   .card_p_job {

@@ -96,8 +96,8 @@
   height: 60%;
   font-size: 1.2rem;
   line-height: 2rem;
-  text-align: left;
-  margin: 1.4rem;
+  text-align: center;
+  margin: 1rem;
   overflow: hidden;
   overflow-y: scroll;
 }
