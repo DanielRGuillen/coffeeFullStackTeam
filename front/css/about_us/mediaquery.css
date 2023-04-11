@@ -112,6 +112,9 @@
         text-align: center;
     }
 
+    .card{
+        margin:0;
+    }
 
     .values ul li {
         padding: 10px;

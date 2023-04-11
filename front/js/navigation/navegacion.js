@@ -1,4 +1,4 @@
-/*páginas que cargan siempre cuando se llaman a las otras páginas*/ 
+/*páginas que cargan siempre cuando se llaman a las otras páginas*/
 
 $(function () {
   $("#navbar").load("../../html/headerAndFooter/header.html");
@@ -7,7 +7,6 @@ $(function () {
 $(function () {
   $("#footer").load("../../html/headerAndFooter/footer.html");
 });
-
 
 function navbarContact() {
   $(function () {
@@ -29,7 +28,9 @@ function navbarProducts() {
 
 function footerTerms() {
   $(function () {
-    $("#padre").load("../../html/terminos_condiciones/terminos_condiciones.html");
+    $("#padre").load(
+      "../../html/terminos_condiciones/terminos_condiciones.html"
+    );
   });
 }
 
@@ -39,16 +40,17 @@ function footeriTerms() {
   });
 }
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   var menuBurger = document.getElementById("navcol-1");
   var lastScrollTop = 0;
 
-  window.addEventListener("scroll", function(){
+  window.addEventListener("scroll", function () {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if(scrollTop > lastScrollTop){
+    if (scrollTop > lastScrollTop) {
       // ocultar el menú hamburguesa al hacer scroll hacia abajo
       menuBurger.classList.remove("show");
-    } 
+    }
     lastScrollTop = scrollTop;
   });
 });
+
