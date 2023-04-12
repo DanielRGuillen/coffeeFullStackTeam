@@ -151,8 +151,8 @@
     .card {
         margin-right: 0;
         margin-bottom: 2rem;
-        width: 38vw;
-        height: 35vh;
+        width: 35vw;
+        height: 38vh;
     }
 
 }
@@ -213,14 +213,14 @@
     }
 
     .card {
-        width: 42vw;
+        width: 40vw;
         height: 35vh;
       }
 
       .card img {
-        width: 8rem;
-        height: 8rem;
-        margin: 15px, 30px;
+        width: 9rem;
+        height: 9rem;
+        margin: 15px 
       }
       
       .card_p_name {
@@ -229,8 +229,11 @@
       }
 
       .card_p_job {
-        font-size: 10px;
+        font-size: 14px;
         margin-bottom: 0.5rem;
+      }
+      .team_redes i{
+        font-size: 1.3rem;
       }
 
 }
@@ -267,20 +270,21 @@
 
 
     .team_cards{
+        margin-top: 2rem;
         padding: 15px;
         align-items: center;
     }
 
     .card {
-        width: 43vw;
-        height: 37vh;
+        width: 41vw;
+        height: 33vh;
         align-items: center;
       }
 
       .card img {
-        width: 7rem;
-        height: 7rem;
-        margin: 12px, 25px;
+        width: 6rem;
+        height: 6rem;
+        margin: 12px 5px;
       }
       
       .card_p_name {
@@ -288,14 +292,22 @@
         margin: 6px 7px;
       }
       hr {
-        width: 10rem;
+        width: 33vw;
 
       }
 
       .card_p_job {
-        font-size: 7px;
+        font-size: 11px;
         margin-bottom: 0.3rem;
       }
+      .card_p_job span{
+        font-size: 11px;
+      }
+      .team_redes i, 
+      #play{
+        font-size: 14px;
+      }
+    
 
       .card .content p{
         font-size: 9px;
@@ -352,8 +364,8 @@
 
 
     .card {
-        width: 42vw;
-        height: 40vh;
+        width: 43vw;
+        height: 38vh;
       }
 
       .card img {
@@ -372,7 +384,7 @@
       }
 
       .card_p_job {
-        font-size: 6px;
+        font-size: 8.6px;
         margin-bottom: 0.3rem;
       }
 
@@ -390,9 +402,5 @@
 
       }
 
-      .team_redes i {
-        font-size: 1.2rem;
-      
-      }
-
+     
 }
