@@ -1,4 +1,4 @@
-/* Responsive para que no se desborde el parrafo de descripcion proyecto y el header */
+
 @media screen and (max-width: 990px) {
 
     .ourProject {
@@ -213,8 +213,8 @@
     }
 
     .card {
-        width: 15rem;
-        height: 17.7rem;
+        width: 42vw;
+        height: 35vh;
       }
 
       .card img {
@@ -267,30 +267,29 @@
 
 
     .team_cards{
-        margin: 0;
         padding: 15px;
         align-items: center;
     }
 
-    .top{
-        padding: 0;
-        align-items: center;
-    }
     .card {
-        width: 10rem;
-        height: 14.7rem;
+        width: 43vw;
+        height: 37vh;
         align-items: center;
       }
 
       .card img {
-        width: 6rem;
-        height: 6rem;
+        width: 7rem;
+        height: 7rem;
         margin: 12px, 25px;
       }
       
       .card_p_name {
         font-size: 1rem;
         margin: 6px 7px;
+      }
+      hr {
+        width: 10rem;
+
       }
 
       .card_p_job {
@@ -330,8 +329,8 @@
       
       }
       
-    .descrip1 {
-        font-size: 0.7rem;
+    .descrip1 p{
+        font-size: 0.8rem;
         height: 25vh;
         
     }
@@ -339,7 +338,7 @@
 
     .values ul li {
         padding: 0.05rem;
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         letter-spacing: 0.5px;
     }
 
@@ -353,8 +352,8 @@
 
 
     .card {
-        width: 8rem;
-        height: 12.7rem;
+        width: 42vw;
+        height: 40vh;
       }
 
       .card img {
@@ -366,6 +365,10 @@
       .card_p_name {
         font-size: 0.8rem;
         margin: 4px 5px;
+      }
+      hr {
+        width: 31vw;
+
       }
 
       .card_p_job {
@@ -379,7 +382,7 @@
       }
       
       .card .content p{
-        font-size: 8px;
+        font-size: 9px;
       }
 
       .content p {
