@@ -1,17 +1,299 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/shared/shared.css">
-  <title>AudifonosColombia</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#bla" />
+  <title>productos</title>
+
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="../../css/product/styles.css" />
+  <link rel="stylesheet" href="../../css/headerAndFooter/header.css">
+  
 </head>
+
 <body>
-  <section>
-    <article>
-      <h1>bienvenidos a la página de productos - products.html</h1>
-    </article>
-  </section>
+  <div class="menup">
+    <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill"
+        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+        aria-selected="false"><img
+        src="../../assets/headerAndFooter/tobotic.png"
+        alt="carrito"
+    />Productos</a>
+    </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+          aria-selected="false"><img
+          src="../../assets/headerAndFooter/icons8-shopping-cart-64.png"
+          alt="carrito"
+      />Carrito</a>
+      </li>
+    </ul>
+  </div>
+  
+
+  <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+  </div>
+  <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+    Producto removido!
+  </div>
+
+  <div class="tab-content" id="pills-tabContent">
+
+    <!--para llamarlos ene l menú-->
+    <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      1
+    </div>
+    <!--tabla productos-->
+    <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
+      aria-labelledby="pills-profile-tab">
+      <h2 class="h4 m-4 text-primary">Catalogo de Productos</h2>
+
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+        <div class="col d-flex justify-content-center mb-4">
+
+          <!--productos-->
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">SENZER SG500 Surround Sound Pro
+            </h5>
+            <img src="../../assets/products/senzer-sg500-surround-sound-pro.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Los auriculares Senzer SG500 son
+                plegables, livianos y cómodos con almohadillas desmontables. Cuentan con micrófono
+                antiestático con cancelación de ruido y capacidad de sonido envolvente. Son
+                compatibles con múltiples plataformas y Plug and Play.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$350000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">sephia SP3060 Auriculares</h5>
+            <img src="../../assets/products/sephia-sp3060-auriculares.webp" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">descripcion": "Auriculares con cable
+                ideales para correr o hacer ejercicio, con 6 juegos de almohadillas y un potente
+                imán de neodimio de 0.394 in para una excelente claridad de audio y aislamiento de
+                ruido. Diseño ligero y elegante en color plateado y negro.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 200000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Auriculares inalámbricos JBL Tune
+              125TWS</h5>
+            <img src="../../assets/products/s-inal195161mbricos-jbl-tune-125tws.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Ofrecen un sonido de graves puros de
+                alta calidad y hasta 32 horas de duración de batería. Además, se emparejan
+                fácilmente con dispositivos Android. Los auriculares cuentan con controles
+                independientes para llamadas y música.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 150000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Luckyu Auriculares con orejas de
+              gato</h5>
+            <img src="../../assets/products/luckyu-auriculares-inalambrico.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Auriculares Bluetooth 5.0 plegables con
+                aislamiento de ruido, micrófono integrado, tres modos de reproducción de música,
+                modo FM, diadema ajustable y cómoda, orejas de gato con luces LED y batería
+                recargable de 400 mAh.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 400000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Itayak Bluetooth 5.0</h5>
+            <img src="../../assets/products/itayak-bluetooth-5-0.webp" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Auriculares detrás de la cabeza con
+                tecnología Bluetooth 5.0 ofrecen una transmisión más rápida y una conexión estable
+                con dispositivos Bluetooth. Con un rango de conexión de 33 pies, proporcionan
+                llamadas telefónicas manos libres</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 250000</span></h5>
+
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Otium Auriculares Bluetooth
+              inalámbricos</h5>
+            <img src="../../assets/products/iculares-bluetooth-inal195161mbricos.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Los auriculares Bluetooth U18 cuentan
+                con la última tecnología Bluetooth 5.1 y componentes acústicos mejorados para
+                ofrecer auténtico sonido HD de alta fidelidad con graves profundos y agudos
+                cristalinos.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 180000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">EKSA E900 - Auriculares para juegos
+              con micró</h5>
+            <img src="../../assets/products/eksa-e900-auriculares-para-juegos.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Tienen un micrófono desmontable con
+                tecnología de cancelación de ruido omnidireccional, con ajuste de volumen, son
+                ideales para juegos, trabajo, estudios, chats y Skype. Transmisiones de voz fuertes
+                y de alta calidad garantizadas.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 380000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Auriculares inalámbricos Bluetooth
+              ZIYOU LANG</h5>
+            <img src="../../assets/products/auriculares-inal195161mbricosziyou.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Están equipados con altavoz de alta
+                calidad y micrófono integrado, pueden ofrecer un sonido estéreo de alta resolución o
+                graves profundos al escuchar música, te mantienen alejado del ruido circundante.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 300000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Auriculares inalámbricos Bluetooth
+              PSIER</h5>
+            <img src="../../assets/products/auriculares-inal195161mbricospsier.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Tienen almohadillas de silicona planas
+                y redondas para adaptarse a diferentes orejas, ganchos antideslizantes para un
+                ajuste seguro durante el ejercicio y un sello acústico que cierra el sonido.
+                Diseñados para comodidad durante largas horas de uso.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 170000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Audífonos inalámbricos Bluetooth
+              PRTUKYT</h5>
+            <img src="../../assets/products/95173fonos-inal195161mbricos-prtukyt.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Audífonos inalámbricos con chip
+                Bluetooth 5.0 avanzado, graves profundos y agudos cristalinos, recargables y con
+                respuesta precisa de graves. Ofrecen calidad de sonido superior, rango de frecuencia
+                ampliado y música envolvente a bajo volumen.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 200000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel"
+      aria-labelledby="pills-contact-tab">
+      <br>
+      <table class="table table table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+
+        <!--Espacio para el arreglo-->
+        <tbody class="tbody">
+
+
+
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <a href="https://buy.stripe.com/test_8wM16vfa49pE5I4145"><button
+              class="btn btn-success">COMPRAR</button></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="../../js/product/scripts.js"></script>
+  <script src="../../js/arrowDirection.js"></script>
 </body>
+
 </html>

@@ -330,6 +330,7 @@
     position:relative;
     bottom: 79px;
     width: 270px; 
+    height: 29%;
   }
 
   .cardInf h3{
@@ -380,6 +381,7 @@
     bottom: 60px;
     width: 180px; 
     padding: 5px;
+    height: 32%;
   }
 
   .cardInf h3{
@@ -434,6 +436,7 @@
     bottom: 53px;
     width: 140px; 
     padding: 5px;
+    height: 44%;
   }
 
   .cardInf h3{
