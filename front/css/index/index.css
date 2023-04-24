@@ -226,7 +226,8 @@
   left: 0;
 }
 
-@media (max-width: 1370px) {
+
+@media (max-width: 1600px) {
   .card-image img {
     max-width: 295px;
     max-height: 295px;
