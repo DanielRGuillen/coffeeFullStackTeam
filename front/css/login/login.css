@@ -14,7 +14,7 @@ header {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  animation: change-bg 20s ease-in-out infinite;
+  animation: change-bg 50s ease-in-out infinite;
   overflow: hidden;
 }
 
